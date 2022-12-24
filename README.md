@@ -20,7 +20,7 @@
 这里会收集一些DP和LDP在现实生活中的用例
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response](./note/)| Google | 2015 |https://github.com/google/rappor
+| [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response](/note/)| Google | 2015 |https://github.com/google/rappor
 |IBM-differential-privacy-library | IBM | 2018 | https://github.com/IBM/differential-privacy-library/blob/main/
 | Heavy Hitter Estimation over Set-Valued Data with Local Differential Privacy | Zhan Qin |2016/CCS | 
 ## LDP and DP下数据分析
