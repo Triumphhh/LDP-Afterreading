@@ -30,7 +30,7 @@
 | [Collecting And Analyzing Data Jointly From Multiple Services under Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | Min Xu | 2020/VLDB Endowment | 
 | [Building a RAPPOR with the Unknown: Privacy-Preserving Learning of Associations and Data Dictionaries](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | G. Fanti, Vasyl Pihur, Ú. Erlingsson | 2015 | 
 |[DPSAaS: Multi-Dimensional Data Sharing and Analytics as Services under Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | Min Xu| 2019/VLDB Endow | 
-|
+|[Heavy Hitter Estimation over Set-valued Data with Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|Qin Z,Yang Y|2016 ACM SIGSAC|本地差分隐私下对集值数据的频繁项估计|
 
 ## LDP and DP下数据发布
 多是一些LDP&DP下的数据发布和响应数据查询
