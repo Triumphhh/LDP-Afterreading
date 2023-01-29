@@ -60,7 +60,7 @@
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://github.com/Su-Whale/LDP-Afterreading/blob/main/FL-DP/Practical%20Private%20Aggregation%20in%20Federated%20Learning%20with%20Local%20Differential%20Privacy.pdf)|Lichao Sun | 2021 |本文针对在多层神经网络中存在隐私预算爆炸的问题提出了LDP-FL框架，不仅很好的保护了隐私，而且通过分割洗牌机制降低了隐私预算在多层迭代中的激增
-| [LDP-Fed: Federated Learning with Local Differential Privacy](https://github.com/Su-Whale/LDP-Afterreading/blob/main/FL-DP/Federated%20Learning%20with%20Local%20Differential%20Privacy.pdf)|Stacey Truex|2020 ｜本文提出了LDP-Fed框架，LDP 模块为在多个个体参与者的私有数据集上的大规模神经网络联合训练中模型训练参数的重复收集提供了正式的差分隐私保证。其次，LDP-Fed实现了一套选择和过滤技术，用于扰动和与参数服务器共享选择的参数更新。
+| [LDP-Fed: Federated Learning with Local Differential Privacy](https://github.com/Su-Whale/LDP-Afterreading/blob/main/FL-DP/Federated%20Learning%20with%20Local%20Differential%20Privacy.pdf)|Stacey Truex|2020 |本文提出了LDP-Fed框架，LDP 模块为在多个个体参与者的私有数据集上的大规模神经网络联合训练中模型训练参数的重复收集提供了正式的差分隐私保证。其次，LDP-Fed实现了一套选择和过滤技术，用于扰动和与参数服务器共享选择的参数更新。
 
 
 
