@@ -59,7 +59,7 @@
 问题描述
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://github.com/Su-Whale/LDP-Afterreading/blob/main/FL-DP/Practical%20Private%20Aggregation%20in%20Federated%20Learning%20with%20Local%20Differential%20Privacy.pdf)|
+| [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://github.com/Su-Whale/LDP-Afterreading/blob/main/FL-DP/Practical%20Private%20Aggregation%20in%20Federated%20Learning%20with%20Local%20Differential%20Privacy.pdf)|Lichao Sun | 2021 |本文针对在多层神经网络中存在隐私预算爆炸的问题提出了LDP-FL框架，不仅很好的保护了隐私，而且通过分割洗牌机制降低了隐私预算在多层迭代中的激增
 
 
 
