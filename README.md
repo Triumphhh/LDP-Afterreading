@@ -59,7 +59,7 @@
 问题描述
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy]((https://github.com/Su-Whale/LDP-Afterreading/blob/main/FL-DP/Practical%20Private%20Aggregation%20in%20Federated%20Learning%20with%20Local%20Differential%20Privacy.pdf)|
+| [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://github.com/Su-Whale/LDP-Afterreading/blob/main/FL-DP/Practical%20Private%20Aggregation%20in%20Federated%20Learning%20with%20Local%20Differential%20Privacy.pdf)|
 
 
 
