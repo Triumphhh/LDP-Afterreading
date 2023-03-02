@@ -19,7 +19,7 @@
     - present extensions and limitations
 - Problem defination: Join as a Hyper-Graph
     
-    ![Untitled](Random%20sampling%20over%20joins%20revisited%20(1)%20250d48e16e7a46ea9b1ca7e466cbed83/Untitled.png)
+    ![Untitled](https://github.com/Triumphhh/LDP-Afterreading/blob/main/lx/Random%20sampling%20over%20joins%20revisited(pic)/Untitled.png)
     
 - Sampling 2-relation joins:
     - Olken’s algorithm: based on the (max) frequency of attribute v in R2, maybe causing high rejection rate.
@@ -33,16 +33,16 @@
     - Basic idea: a tuple t should be sampled using weight w(t). But w(t) is not available , so using W(t), the upper bound of w(t), as a proxy with an approprite probability to reject.
     - some invariants:
     
-    ![Untitled](Random%20sampling%20over%20joins%20revisited%20(1)%20250d48e16e7a46ea9b1ca7e466cbed83/Untitled%201.png)
+    ![Untitled](https://github.com/Triumphhh/LDP-Afterreading/blob/main/lx/Random%20sampling%20over%20joins%20revisited(pic)/Untitled%201.png)
     
     - Algorithm 1: each join result will be returned with equal probability under invariants above.
     
-    ![Untitled](Random%20sampling%20over%20joins%20revisited%20(1)%20250d48e16e7a46ea9b1ca7e466cbed83/Untitled%202.png)
+    ![Untitled](https://github.com/Triumphhh/LDP-Afterreading/blob/main/lx/Random%20sampling%20over%20joins%20revisited(pic)/Untitled%202.png)
     
     - Remarks:
         - The probability that (r0,t1,…,ti) is sampled is:
         
-        ![Untitled](Random%20sampling%20over%20joins%20revisited%20(1)%20250d48e16e7a46ea9b1ca7e466cbed83/Untitled%203.png)
+        ![Untitled](https://github.com/Triumphhh/LDP-Afterreading/blob/main/lx/Random%20sampling%20over%20joins%20revisited(pic)/Untitled%203.png)
         
         - don’t need to have all W(t) as an input.
         - regardless of the choice of W(t), this algorithm always returns independent samples as well.
@@ -58,7 +58,7 @@
     - if partial frequency information is available, handling the frequent and infrequent values separately.
     - upper bound the size of each subjoin with a threshold h, which indicates the tuple in R is heavy or light.
     
-    ![Untitled](Random%20sampling%20over%20joins%20revisited%20(1)%20250d48e16e7a46ea9b1ca7e466cbed83/Untitled%204.png)
+    ![Untitled](https://github.com/Triumphhh/LDP-Afterreading/blob/main/lx/Random%20sampling%20over%20joins%20revisited(pic)/Untitled%204.png)
     
 - Wander join as initialization
     - Observation: Wander join can not only be used to estimate |J|=w(r0), but also each intermediate join size w(t).
@@ -72,11 +72,11 @@
         - basic idea: whenever reaching a relation that has more than one  child below, branching the sampling process into two subtrees.
         - Invariants changes in this situation:
             
-            ![Untitled](Random%20sampling%20over%20joins%20revisited%20(1)%20250d48e16e7a46ea9b1ca7e466cbed83/Untitled%205.png)
+            ![Untitled](https://github.com/Triumphhh/LDP-Afterreading/blob/main/lx/Random%20sampling%20over%20joins%20revisited(pic)/Untitled%205.png)
             
         - Algorithm 2 : Acyclic sample
             
-            ![Untitled](Random%20sampling%20over%20joins%20revisited%20(1)%20250d48e16e7a46ea9b1ca7e466cbed83/Untitled%206.png)
+            ![Untitled](https://github.com/Triumphhh/LDP-Afterreading/blob/main/lx/Random%20sampling%20over%20joins%20revisited(pic)/Untitled%206.png)
             
         - it turns into a recursive algorithm. line 2 and 6 iteratively tighten the join size upper bounds, hence improving the sampling efficiency over time.
     - Cyclic queries
@@ -84,7 +84,7 @@
         - residual query & skeleton query. Usually residual query tends to be smaller.
         - Algorithm 3: Cyclic sample
             
-            ![Untitled](Random%20sampling%20over%20joins%20revisited%20(1)%20250d48e16e7a46ea9b1ca7e466cbed83/Untitled%207.png)
+            ![Untitled](https://github.com/Triumphhh/LDP-Afterreading/blob/main/lx/Random%20sampling%20over%20joins%20revisited(pic)/Untitled%207.png)
             
         - Remarks:
             - this algorithm coincides with the wedge sampling on a triangle query.
