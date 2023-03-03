@@ -29,11 +29,13 @@
 多是一些LDP&DP下的数据融合分析
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [Collecting And Analyzing Data Jointly From Multiple Services under Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | Min Xu | 2020/VLDB Endowment | 
-| [Building a RAPPOR with the Unknown: Privacy-Preserving Learning of Associations and Data Dictionaries](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | G. Fanti, Vasyl Pihur, Ú. Erlingsson | 2015 | 
-|[DPSAaS: Multi-Dimensional Data Sharing and Analytics as Services under Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | Min Xu| 2019/VLDB Endow | 
+| [Collecting And Analyzing Data Jointly From Multiple Services under Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | Min Xu | 2020/VLDB Endowment | 针对多服务器场景下的本地化差分隐私数据收集与分析
+| [Building a RAPPOR with the Unknown: Privacy-Preserving Learning of Associations and Data Dictionaries](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | G. Fanti, Vasyl Pihur, Ú. Erlingsson | 2015 | 在未知关系和词典的情况下构建RAPPOR
+|[DPSAaS: Multi-Dimensional Data Sharing and Analytics as Services under Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | Min Xu| 2019/VLDB Endow | 由阿里提出的本地化差分隐私下的多维数据共享和分析云服务
 |[Heavy Hitter Estimation over Set-valued Data with Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|Qin Z,Yang Y|2016 ACM SIGSAC|本地差分隐私下对集值数据的频繁项估计|
 |[Local DIfferentially Private Heavy Hitters Identification](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|Tianhao Wang|2021 IEEE|本地化差分隐私下的频繁项识别：提出了前缀扩展方法(Prefix Extending Method,PEM)|
+|[Budget Sharing for multi-analyst differential privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|David Pujol, Yikai Wu|2021 PVLDB|本文首次研究了多分析师场景下的差分隐私预算共享，并针对此问题提出了三种机制：共享激励，不干涉和适应性
+|[Multi-analyst differential privacy for online query answering](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|David Pujol, Albert Sun|2022|本文基于作者们之前的研究，将多分析师差分隐私预算分配问题扩展到了在线查询回答的情况下
 
 ## LDP and DP下数据发布
 多是一些LDP&DP下的数据发布和响应数据查询
