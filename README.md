@@ -50,9 +50,9 @@
 ## DB and Join queries 数据库连接查询
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [Residual Sensitivity for Differentially Private Multi-way joins](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)| Wei Dong, Ke Yi| 2021 |为了解决连接查询下差分隐私噪声敏感度过大以及计算效率的问题，本文提出残差查询和残差敏感度或最大边界，使敏感度计算满足高效率、高效用以及可一体化
-| [Wander join and XDB: Online aggregation via random walks](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|Feifei Li, Bin Wu, Ke Yi, Zhuoyue Zhao|2019|本文提出了一种新颖的采样算法对数据库连接进行采样，基于在线聚集利用随机游走的方式针对不同场景下的连接查询进行连接采样，得到独立非均匀地样本，具有高效性
-| [Random Sampling over Joins Revisited](https://github.com/Triumphhh/LDP-Afterreading/tree/main/lx)|Zhuoyue Zhao, Feifei Li, Ke Yi|2018|本文对数据库连接采样的问题进行了回顾，总结了前人的方法与缺陷，并基于此提出改进。构建了连接随机采样框架统一化先前方法，并在更复杂场景下给出更加优化的方案来解决连接的随机采样
+| [Residual Sensitivity for Differentially Private Multi-way joins](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)| Wei Dong, Ke Yi| 2021 |为了解决连接查询下差分隐私噪声敏感度过大以及计算效率的问题，本文提出残差查询和残差敏感度或最大边界，使敏感度计算满足高效率、高效用以及可一体化.(https://github.com/hkustDB/ResidualSensitivity)
+| [Wander join and XDB: Online aggregation via random walks](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|Feifei Li, Bin Wu, Ke Yi, Zhuoyue Zhao|2019|本文提出了一种新颖的采样算法对数据库连接进行采样，基于在线聚集利用随机游走的方式针对不同场景下的连接查询进行连接采样，得到独立非均匀地样本，具有高效性.(https://github.com/InitialDLab/XDB)
+| [Random Sampling over Joins Revisited](https://github.com/Triumphhh/LDP-Afterreading/tree/main/lx)|Zhuoyue Zhao, Feifei Li, Ke Yi|2018|本文对数据库连接采样的问题进行了回顾，总结了前人的方法与缺陷，并基于此提出改进。构建了连接随机采样框架统一化先前方法，并在更复杂场景下给出更加优化的方案来解决连接的随机采样.(https://github.com/InitialDLab/SampleJoin)
 
 ## DP and LDP与机器学习相结合
 多是一类分布式与联邦学习下数据聚合方面，但是根据差分隐私与机器学习结合部位的不同（例如：目标函数扰动、输入扰动、梯度扰动、输出扰动）可以用于不同的场景下
