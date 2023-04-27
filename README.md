@@ -12,6 +12,7 @@
     - [Heavy Hitter Estimation LDP](#Heavy-Hitter-Estimation-LDP)
    - [LDP & Collecting and analyzing method](#ldp-and-dp下数据分析)
    - [LDP & Answering method](#ldp-and-dp下数据发布)
+   - [DP/LDP & Optimizing techniques](#dp-and-ldp下优化技术)
    - [DB & Join queries](#数据库连接查询)
    - [DP & Meachine Learning](#dp-and-ldp与机器学习相结合)
    - [DP & Federated Learning](#dp-and-ldp与联邦学习相结合)
@@ -46,6 +47,11 @@
 |[Continuous Release of Data Streams under both Centralized and Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)| Tianhao Wang |2019| 主要描述的是在数据流发布环境下如何使用DP和LDP对数据流施加差分隐私保护，同时作者提出了两个框架，一个是基于DP的ToPS框架，一个是基于LDP的ToPL框架
 | [Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)| Di Wang | 2020 | 这篇文章提出使用内积多项式的形式释放函数，一般是用于分布式学习和联邦学习下，但在响应边缘查询（k-way Margin Query）时也提出了使用内积多项式的形式去简化查询函数（使用数学去定义查询函数），从而提升查询精度
 
+## DP/LDP and Optimization techniques 优化技术
+| Title | Team/Main Author | Venue and Year | Key Description
+| :------------| :------ | :---------- | :-----------------------
+| [The Matrix Mechanism: optimizing liner counting queries under differential privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)| Chao Li | 2015 | 本文提出的矩阵机制(MM)可以更准确回答计数查询集，并可以通过迭代求解半定规划计算最优策略.
+| [Query optimization for differentially private datamanagement system](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|Peng, Shangfu|2013|本文提出了 Pioneer，这是一种适用于 DP 兼容 DBMS 的有效且高效的查询优化器,其构建了一个重用历史查询的执行方案，以尽量减少隐私预算的使用。它还包括一种有效的算法，用于选择有助于回答新传入查询的历史查询，并且方案计算和历史查询选择的计算成本可忽略.
 
 ## DB and Join queries 数据库连接查询
 | Title | Team/Main Author | Venue and Year | Key Description 
