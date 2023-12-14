@@ -17,14 +17,22 @@
    - [DP & Meachine Learning](#dp-and-ldp与机器学习相结合)
    - [DP & Federated Learning](#dp-and-ldp与联邦学习相结合)
 
-## DP scenario
-
-这里会收集一些DP和LDP在现实生活中的用例
+## Differential Privacy in Practice (overview)
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)| Google | 2015 |https://github.com/google/rappor
-|[IBM-differential-privacy-library](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | IBM | 2018 | https://github.com/IBM/differential-privacy-library/blob/main/
-| [Heavy Hitter Estimation over Set-Valued Data with Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | Zhan Qin |2016/CCS | 
+| [Differential Privacy in Practice: Expose your Epsilons!](https://journalprivacyconfidentiality.org/index.php/jpc/article/view/689) | Cynthia Dwork | 2019 | 文章针对差分隐私落地面临诸多阻碍的问题，使用访谈的方式，与部署了差分隐私的企业的相关人士进行了深入系统性的沟通交流，并对访谈结果进行了归纳整理。文中重点探讨了隐私预算在实际应用中的选择，提出**Epsilon Registry**.(知乎：https://zhuanlan.zhihu.com/p/641373746)
+| [Privacy at Scale: Local Differential Privacy in Practice](https://dl.acm.org/doi/10.1145/3183713.3197390) | Graham Cormode, Ninghui Li, Tianhao Wang | 2018 | 文章概述了LDP的应用场景以及行业发展方向，对LDP的各个方面进行了详细介绍.
+| [本地化差分隐私研究综述](https://www.jos.org.cn/jos/article/abstract/5364) | Qingqing Ye, Xiaofeng Meng | 2018 | 文章介绍了LDP的原理和特性，总结和归纳了当前研究工作以及阐述LDP的研究热点，指出了LDP的未来研究挑战.
+
+
+## Differential Privacy Open-source Project
+| Title | Team/Main Author | Venue and Year | Key Description 
+| :------------| :------ | :---------- | :-----------------------
+| [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response](https://dl.acm.org/doi/10.1145/2660267.2660348)| Google | 2015 | 项目地址：https://github.com/google/rappor
+| [IBM-differential-privacy-library](https://arxiv.org/abs/1907.02444) | IBM | 2018 | 项目地址https://github.com/IBM/differential-privacy-library/blob/main/ <br> 博客：https://research.ibm.com/blog/ibm-differential-privacy-library-the-single-line-of-code-that-can-protect-your-data
+| [learning-privacy-at-scale](https://docs-assets.developer.apple.com/ml-research/papers/learning-with-privacy-at-scale.pdf) | Apple | 2017 | 项目地址https://github.com/Samuel-Maddock/Apple-Differential-Privacy <br> 博客：https://machinelearning.apple.com/research/learning-with-privacy-at-scale
+| [Collecting Telemetry Data Privately](https://proceedings.neurips.cc/paper/2017/hash/253614bbac999b38b5b60cae531c4969-Abstract.html) | Microsoft | 2017 | 项目地址：None <br> 博客：https://www.microsoft.com/en-us/research/blog/collecting-telemetry-data-privately/
+
 
 ## LDP and DP下数据分析
 多是一些LDP&DP下的数据融合分析
