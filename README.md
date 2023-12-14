@@ -1,7 +1,7 @@
-﻿# 前言
-
-第一部分为论文梳理，第二部分为具体细节，第三部分为实验代码
-
+# Differential Privacy Learning Repository of Privacy-preserving Big Data Analytics Group, CIAT, GZHU.
+ 
+# 前言
+该学习库中包括差分隐私相关研究的汇总，以及小组工作汇报内容
 
 # 目录
 
@@ -27,8 +27,8 @@
 ## _Differential Privacy Open-source Project_
 | Name | Team/Corporation | Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response](https://dl.acm.org/doi/10.1145/2660267.2660348)| Google | 2015 | 项目地址：https://github.com/google/rappor
-| google-differential-privay | Google | 2019 | 项目地址：https://github.com/google/differential-privacy
+| [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response](https://dl.acm.org/doi/10.1145/2660267.2660348)| Google | 2015 | 项目地址：https://github.com/google/rappor <br> 博客：https://www.cnblogs.com/sftsgly/articles/17501447.html
+| [google-differential-privay](https://desfontain.es/privacy/friendly-intro-to-differential-privacy.html) | Google | 2019 | 项目地址：https://github.com/google/differential-privacy
 | [IBM-differential-privacy-library](https://arxiv.org/abs/1907.02444) | IBM | 2018 | 项目地址https://github.com/IBM/differential-privacy-library/blob/main/ <br> 博客：https://research.ibm.com/blog/ibm-differential-privacy-library-the-single-line-of-code-that-can-protect-your-data
 | [learning-privacy-at-scale](https://docs-assets.developer.apple.com/ml-research/papers/learning-with-privacy-at-scale.pdf) | Apple | 2017 | 项目地址https://github.com/Samuel-Maddock/Apple-Differential-Privacy <br> 博客：https://machinelearning.apple.com/research/learning-with-privacy-at-scale
 | [Collecting Telemetry Data Privately](https://proceedings.neurips.cc/paper/2017/hash/253614bbac999b38b5b60cae531c4969-Abstract.html) | Microsoft | 2017 | 项目地址：None <br> 博客：https://www.microsoft.com/en-us/research/blog/collecting-telemetry-data-privately/
