@@ -17,26 +17,41 @@
    - [DP & Meachine Learning](#dp-and-ldp与机器学习相结合)
    - [DP & Federated Learning](#dp-and-ldp与联邦学习相结合)
 
-## Differential Privacy in Practice (overview)
+## _Overview of Differential Privacy in Practice_
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [Differential Privacy in Practice: Expose your Epsilons!](https://journalprivacyconfidentiality.org/index.php/jpc/article/view/689) | Cynthia Dwork | 2019 | 文章针对差分隐私落地面临诸多阻碍的问题，使用访谈的方式，与部署了差分隐私的企业的相关人士进行了深入系统性的沟通交流，并对访谈结果进行了归纳整理。文中重点探讨了隐私预算在实际应用中的选择，提出**Epsilon Registry**.(知乎：https://zhuanlan.zhihu.com/p/641373746)
 | [Privacy at Scale: Local Differential Privacy in Practice](https://dl.acm.org/doi/10.1145/3183713.3197390) | Graham Cormode, Ninghui Li, Tianhao Wang | 2018 | 文章概述了LDP的应用场景以及行业发展方向，对LDP的各个方面进行了详细介绍.
 | [本地化差分隐私研究综述](https://www.jos.org.cn/jos/article/abstract/5364) | Qingqing Ye, Xiaofeng Meng | 2018 | 文章介绍了LDP的原理和特性，总结和归纳了当前研究工作以及阐述LDP的研究热点，指出了LDP的未来研究挑战.
 
-
-## Differential Privacy Open-source Project
-| Title | Team/Main Author | Venue and Year | Key Description 
+## _Differential Privacy Open-source Project_
+| Name | Team/Corporation | Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response](https://dl.acm.org/doi/10.1145/2660267.2660348)| Google | 2015 | 项目地址：https://github.com/google/rappor
+| google-differential-privay | Google | 2019 | 项目地址：https://github.com/google/differential-privacy
 | [IBM-differential-privacy-library](https://arxiv.org/abs/1907.02444) | IBM | 2018 | 项目地址https://github.com/IBM/differential-privacy-library/blob/main/ <br> 博客：https://research.ibm.com/blog/ibm-differential-privacy-library-the-single-line-of-code-that-can-protect-your-data
 | [learning-privacy-at-scale](https://docs-assets.developer.apple.com/ml-research/papers/learning-with-privacy-at-scale.pdf) | Apple | 2017 | 项目地址https://github.com/Samuel-Maddock/Apple-Differential-Privacy <br> 博客：https://machinelearning.apple.com/research/learning-with-privacy-at-scale
 | [Collecting Telemetry Data Privately](https://proceedings.neurips.cc/paper/2017/hash/253614bbac999b38b5b60cae531c4969-Abstract.html) | Microsoft | 2017 | 项目地址：None <br> 博客：https://www.microsoft.com/en-us/research/blog/collecting-telemetry-data-privately/
+| Jeddak-DPSQL | Bytedance | 2023 | 项目地址：https://github.com/bytedance/Jeddak-DPSQL/ <br> 博客：https://zhuanlan.zhihu.com/p/571766114
+| [OpenDP](https://projects.iq.harvard.edu/files/opendp/files/opendp_programming_framework_11may2020_1_01.pdf)| OpenDP | 2020 | 项目地址：https://github.com/opendp/opendp
+| [Opacus](https://arxiv.org/abs/2109.12298) | Meta AI(Facebook) | 2021 | 项目地址：https://github.com/pytorch/opacus <br> 博客：https://zhuanlan.zhihu.com/p/212862132
 
+### ~ _Some other useful DP tool libraries_ 
+| Name | Author | Key Description 
+| :------------| :------ | :-----------------------
+| LDP_protocols | Tianhao Wang | 本地化差分隐私在Python中的简单应用，包括HIO、PEM、SVSM等。 <br> 项目地址：https://github.com/vvv214/LDP_Protocols
+| pure_LDP | Samuel Maddock | 本地化差分隐私频率估计算法在Python中的简单应用，包括LH、DE、HM、AppleCMS/HCMS等。 <br> 项目地址：https://github.com/Samuel-Maddock/pure-LDP
 
+## _Federated Learning Open-source Project_
+| Name | Team/Corporation | Year | Key Description 
+| :------------| :------ | :---------- | :-----------------------
+| [FATE](https://jmlr.org/papers/v22/20-815.html) | FedAI | 2019 | 项目地址：https://github.com/FederatedAI/FATE <br> 博客：https://zhuanlan.zhihu.com/p/424465305
+| [FederatedScope](https://www.vldb.org/pvldb/vol16/p1059-li.pdf) | Alibaba DAMO | 2023 | 项目地址：https://github.com/alibaba/FederatedScope <br> 博客：https://www.jiqizhixin.com/articles/2022-05-09-7 <br> 视频讲解：https://www.bilibili.com/video/BV1Sv4y197ju/?spm_id_from=333.788&vd_source=406c96d7ba3d57a6cbbe36c50b5a1b75
+
+ 
 ## LDP and DP下数据分析
 多是一些LDP&DP下的数据融合分析
-| Title | Team/Main Author | Venue and Year | Key Description 
+| Title | Team/Main Author | Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [Collecting And Analyzing Data Jointly From Multiple Services under Local Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | Min Xu | 2020/VLDB Endowment | 针对多服务器场景下的本地化差分隐私数据收集与分析
 | [Building a RAPPOR with the Unknown: Privacy-Preserving Learning of Associations and Data Dictionaries](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note) | G. Fanti, Vasyl Pihur, Ú. Erlingsson | 2015 | 在未知关系和词典的情况下构建RAPPOR
