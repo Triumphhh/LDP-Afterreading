@@ -73,26 +73,30 @@
 ## DP and LDP与联邦学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://github.com/Su-Whale/LDP-Afterreading/blob/main/FL-DP/Practical%20Private%20Aggregation%20in%20Federated%20Learning%20with%20Local%20Differential%20Privacy.pdf)|Lichao Sun | 2021 |本文针对在多层神经网络中存在隐私预算爆炸的问题提出了LDP-FL框架，不仅很好的保护了隐私，而且通过分割洗牌机制降低了隐私预算在多层迭代中的激增
-| [LDP-Fed: Federated Learning with Local Differential Privacy](https://github.com/Su-Whale/LDP-Afterreading/blob/main/FL-DP/Federated%20Learning%20with%20Local%20Differential%20Privacy.pdf)|Stacey Truex|2020 |本文提出了LDP-Fed框架，LDP 模块为在多个个体参与者的私有数据集上的大规模神经网络联合训练中模型训练参数的重复收集提供了正式的差分隐私保证。其次，LDP-Fed实现了一套选择和过滤技术，用于扰动和与参数服务器共享选择的参数更新。
+| [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://www.ijcai.org/proceedings/2021/217)|Lichao Sun | 2021/IJCAI |本文针对在多层神经网络中存在隐私预算爆炸的问题提出了LDP-FL框架，不仅很好的保护了隐私，而且通过分割洗牌机制降低了隐私预算在多层迭代中的激增. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+| [LDP-Fed: Federated Learning with Local Differential Privacy](https://dl.acm.org/doi/10.1145/3378679.3394533)|Stacey Truex|2020/EdgeSys |本文提出了LDP-Fed框架，LDP 模块为在多个个体参与者的私有数据集上的大规模神经网络联合训练中模型训练参数的重复收集提供了正式的差分隐私保证。其次，LDP-Fed实现了一套选择和过滤技术，用于扰动和与参数服务器共享选择的参数更新. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
 ## Join queries under DP  隐私保护数据库连接查询
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [Residual Sensitivity for Differentially Private Multi-way joins](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)| Wei Dong, Ke Yi| 2021 |为了解决连接查询下差分隐私噪声敏感度过大以及计算效率的问题，本文提出残差查询和残差敏感度或最大边界，使敏感度计算满足高效率、高效用以及可一体化. <br> - 实验代码：https://github.com/hkustDB/ResidualSensitivity <br> - ☑️ 组内汇报：
-| [Better than Composition：How to Answer Multiple Relational Queries under Differential Privacy](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)| Wei Dong, Dajun Sun, Ke Yi|2023|将单查询机制扩展到多个查询的标准解决方案是通过隐私组合。然而，这可能会产生一个误差范围，该误差范围可能比最优值差根号d因子，其中d是查询数量。在本文中，提出了一种不同的、更全面的方法来缩小这一差距. <br> - 实验代码：https://github.com/hkustDB/PMSJA <br> - ☑️ 组内汇报：
+| [Residual Sensitivity for Differentially Private Multi-way joins](https://dl.acm.org/doi/10.1145/3448016.3452813)| Wei Dong, Ke Yi| 2021/SIGMOD |为了解决连接查询下差分隐私噪声敏感度过大以及计算效率的问题，本文提出残差查询和残差敏感度或最大边界，使敏感度计算满足高效率、高效用以及可一体化. <br> - 实验代码：https://github.com/hkustDB/ResidualSensitivity <br> - ☑️ 组内汇报：
+| [Better than Composition：How to Answer Multiple Relational Queries under Differential Privacy](https://dl.acm.org/doi/10.1145/3589268)| Wei Dong, Dajun Sun, Ke Yi|2023/ACM Maanage.Data|将单查询机制扩展到多个查询的标准解决方案是通过隐私组合。然而，这可能会产生一个误差范围，该误差范围可能比最优值差根号d因子，其中d是查询数量。在本文中，提出了一种不同的、更全面的方法来缩小这一差距. <br> - 实验代码：https://github.com/hkustDB/PMSJA <br> - ☑️ 组内汇报：
 | _Join query ootimization techniques (Non-Private):_ ↘️
-| [Wander join and XDB: Online aggregation via random walks](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|Feifei Li, Bin Wu, Ke Yi, Zhuoyue Zhao|2019|本文提出了一种新颖的采样算法对数据库连接进行采样，基于在线聚集利用随机游走的方式针对不同场景下的连接查询进行连接采样，得到独立非均匀地样本，具有高效性. <br> - 实验代码：https://github.com/InitialDLab/XDB <br> - ☑️ 组内汇报：
-| [Random Sampling over Joins Revisited](https://github.com/Triumphhh/LDP-Afterreading/tree/main/lx)|Zhuoyue Zhao, Feifei Li, Ke Yi|2018|本文对数据库连接采样的问题进行了回顾，总结了前人的方法与缺陷，并基于此提出改进。构建了连接随机采样框架统一化先前方法，并在更复杂场景下给出更加优化的方案来解决连接的随机采样. <br> - 实验代码：https://github.com/InitialDLab/SampleJoin <br> - ☑️ 组内汇报：
+| [Wander join and XDB: Online aggregation via random walks](https://dl.acm.org/doi/10.1145/3284551)|Feifei Li, Bin Wu, Ke Yi, Zhuoyue Zhao|2017/SIGMOD|本文提出了一种新颖的采样算法对数据库连接进行采样，基于在线聚集利用随机游走的方式针对不同场景下的连接查询进行连接采样，得到独立非均匀地样本，具有高效性. <br> - 实验代码：https://github.com/InitialDLab/XDB <br> - ☑️ 组内汇报：
+| [Random Sampling over Joins Revisited](https://github.com/Triumphhh/LDP-Afterreading/tree/main/lx)|Zhuoyue Zhao, Feifei Li, Ke Yi|2018/SIGMOD|本文对数据库连接采样的问题进行了回顾，总结了前人的方法与缺陷，并基于此提出改进。构建了连接随机采样框架统一化先前方法，并在更复杂场景下给出更加优化的方案来解决连接的随机采样. <br> - 实验代码：https://github.com/InitialDLab/SampleJoin <br> - ☑️ 组内汇报：
 
 ## AQP近似查询处理/Sketches 草图技术
 流算法（Streaming algorithms）:使用次线性的时间、空间成本，以很高的计算速度快速响应大型流数据的处理。缺点是只能得到近似真实值的结果，但是很多算法会给出相应估计误差界限。
 | Title | Team/Main Author | Venue and Year | Key Description
 | :------------| :------ | :---------- | :-----------------------
-|[Persistent Data Sketching ](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|Zhewei Wei, Ke Yi|2015 SIGMOD|本文的是使草图持久化，从而使流式算法能够在历史上的任何先前时间回答查询，并且仍然有一个小的ε错误|
-|[At-the-time and Back-in-time Persistent Sketches](https://github.com/Triumphhh/LDP-Afterreading/tree/main/Note)|Benwei Shi, Zhuoyue Zhao, Feifei Li|本文提出了当时持久性（ATTP）和回溯性持久性（BITP）草图的概念，这些草图可以用小空间近似回答对先前版本的数据的查询|
+|[Persistent Data Sketching](https://dl.acm.org/doi/10.1145/2723372.2749443)|Zhewei Wei, Ke Yi|2015/SIGMOD|本文的是使草图持久化，从而使流式算法能够在历史上的任何先前时间回答查询，并且仍然有一个小的ε错误. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+|[At-the-time and Back-in-time Persistent Sketches](https://dl.acm.org/doi/10.1145/3448016.3452802)|Benwei Shi, Zhuoyue Zhao, Feifei Li|2021/SIGMOD|本文提出了当时持久性（ATTP）和回溯性持久性（BITP）草图的概念，这些草图可以用小空间近似回答对先前版本的数据的查询. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
 # __Our works__
+| Title | Team/Main Author | Venue and Year | Key Description
+| :------------| :------ | :---------- | :-----------------------
+|[Local differentially private frequency estimation based on learned sketches](https://doi.org/10.1016/j.ins.2023.119667)| Sixin Lin, Meifan Zhang|2023/Inf. Sci| 在本文中，我们提出了一种基于 LDP 学习草图的大域数据的两阶段频率估计框架，该框架将高频项和低频项分开，以避免哈希冲突引起的误差. <br> - 实验源码：待发布
+
 
 # 数据与代码
 
