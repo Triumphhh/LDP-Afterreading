@@ -102,14 +102,21 @@
 | [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://www.ijcai.org/proceedings/2021/217)|Lichao Sun | 2021/IJCAI |本文针对在多层神经网络中存在隐私预算爆炸的问题提出了LDP-FL框架，不仅很好的保护了隐私，而且通过分割洗牌机制降低了隐私预算在多层迭代中的激增. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 | [LDP-Fed: Federated Learning with Local Differential Privacy](https://dl.acm.org/doi/10.1145/3378679.3394533)|Stacey Truex|2020/EdgeSys |本文提出了LDP-Fed框架，LDP 模块为在多个个体参与者的私有数据集上的大规模神经网络联合训练中模型训练参数的重复收集提供了正式的差分隐私保证。其次，LDP-Fed实现了一套选择和过滤技术，用于扰动和与参数服务器共享选择的参数更新. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
-## DP下的隐私保护数据库查询
+## LDP/DP下的隐私保护数据库查询
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [Better than Composition：How to Answer Multiple Relational Queries under Differential Privacy](https://dl.acm.org/doi/10.1145/3589268)| Wei Dong, Dajun Sun, Ke Yi|2023/ACM Maanage.Data|将单查询机制扩展到多个查询的标准解决方案是通过隐私组合。然而，这可能会产生一个误差范围，该误差范围可能比最优值差根号d因子，其中d是查询数量。在本文中，提出了一种不同的、更全面的方法来缩小这一差距. <br> - 实验代码：https://github.com/hkustDB/PMSJA <br> - ☑️ 组内汇报：
 | [Residual Sensitivity for Differentially Private Multi-way joins](https://dl.acm.org/doi/10.1145/3448016.3452813)| Wei Dong, Ke Yi| 2021/SIGMOD |为了解决连接查询下差分隐私噪声敏感度过大以及计算效率的问题，本文提出残差查询和残差敏感度或最大边界，使敏感度计算满足高效率、高效用以及可一体化. <br> - 实验代码：https://github.com/hkustDB/ResidualSensitivity <br> - ☑️ 组内汇报：
-| _Join query ootimization techniques (Non-Private):_ ↘️
-| [Random Sampling over Joins Revisited](https://github.com/Triumphhh/LDP-Afterreading/tree/main/lx)|Zhuoyue Zhao, Feifei Li, Ke Yi|2018/SIGMOD|本文对数据库连接采样的问题进行了回顾，总结了前人的方法与缺陷，并基于此提出改进。构建了连接随机采样框架统一化先前方法，并在更复杂场景下给出更加优化的方案来解决连接的随机采样. <br> - 实验代码：https://github.com/InitialDLab/SampleJoin <br> - ☑️ 组内汇报：
-| [Wander join and XDB: Online aggregation via random walks](https://dl.acm.org/doi/10.1145/3284551)|Feifei Li, Bin Wu, Ke Yi, Zhuoyue Zhao|2017/SIGMOD|本文提出了一种新颖的采样算法对数据库连接进行采样，基于在线聚集利用随机游走的方式针对不同场景下的连接查询进行连接采样，得到独立非均匀地样本，具有高效性. <br> - 实验代码：https://github.com/InitialDLab/XDB <br> - ☑️ 组内汇报：
+
+## LDP/DP下的大语言模型(LLM)隐私保护
+| Title | Team/Main Author | Venue and Year | Key Description 
+| :------------| :------ | :---------- | :-----------------------
+| [DP-Forward: Fine-tuning and Inference on Language Models with Differential Privacy in Forward Pass](https://doi.org/10.1145/3576915.3616592)|Minxin Du, Tianhao Wang, et al|2023/CCS|本文介绍了一种在前向传递中扰乱嵌入矩阵的方法，以实现差分隐私的语言模型微调和推理. <br> - 实验代码：https://github.com/xiangyue9607/dp-forward <br> - ☑️ 组内汇报：
+
+## 基于混洗模型的DP(Shuffle DP)
+| Title | Team/Main Author | Venue and Year | Key Description 
+| :------------| :------ | :---------- | :-----------------------
+| [Improving Utility and Security of the Shuffler-based Differential Privacy](http://www.vldb.org/pvldb/vol13/p3545-wang.pdf)|Tianhao Wang, Bolin Ding, Min Xu, et al|2020/VLDB Endow|本文从两个角度研究了差分隐私的洗牌模型。首先，从算法角度进行研究，并对现有技术进行改进。其次，从模型的安全性角度出发，强调了两种攻击类型：串通攻击和数据中毒攻击；随后，提出了在这些攻击下更加安全的 PEOS 协议。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols/tree/master/murs <br> - ☑️ 组内汇报：
 
 # 三、其他相关文献
 
@@ -119,6 +126,12 @@
 | :------------| :------ | :---------- | :-----------------------
 |[Persistent Data Sketching](https://dl.acm.org/doi/10.1145/2723372.2749443)|Zhewei Wei, Ke Yi|2015/SIGMOD|本文的是使草图持久化，从而使流式算法能够在历史上的任何先前时间回答查询，并且仍然有一个小的ε错误. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[At-the-time and Back-in-time Persistent Sketches](https://dl.acm.org/doi/10.1145/3448016.3452802)|Benwei Shi, Zhuoyue Zhao, Feifei Li|2021/SIGMOD|本文提出了当时持久性（ATTP）和回溯性持久性（BITP）草图的概念，这些草图可以用小空间近似回答对先前版本的数据的查询. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+
+## 关系数据库连接查询优化技术
+| Title | Team/Main Author | Venue and Year | Key Description
+| :------------| :------ | :---------- | :-----------------------
+| [Random Sampling over Joins Revisited](https://github.com/Triumphhh/LDP-Afterreading/tree/main/lx)|Zhuoyue Zhao, Feifei Li, Ke Yi|2018/SIGMOD|本文对数据库连接采样的问题进行了回顾，总结了前人的方法与缺陷，并基于此提出改进。构建了连接随机采样框架统一化先前方法，并在更复杂场景下给出更加优化的方案来解决连接的随机采样. <br> - 实验代码：https://github.com/InitialDLab/SampleJoin <br> - ☑️ 组内汇报：
+| [Wander join and XDB: Online aggregation via random walks](https://dl.acm.org/doi/10.1145/3284551)|Feifei Li, Bin Wu, Ke Yi, Zhuoyue Zhao|2017/SIGMOD|本文提出了一种新颖的采样算法对数据库连接进行采样，基于在线聚集利用随机游走的方式针对不同场景下的连接查询进行连接采样，得到独立非均匀地样本，具有高效性. <br> - 实验代码：https://github.com/InitialDLab/XDB <br> - ☑️ 组内汇报：
 
 # 四、我们的工作
 | Title | Team/Main Author | Venue and Year | Key Description
