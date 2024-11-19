@@ -116,6 +116,7 @@
 | Title | Team/Main Author | Venue and Year | Key Description
 | :------------| :------ | :---------- | :-----------------------
 |[Local differentially private frequency estimation based on learned sketches](https://doi.org/10.1016/j.ins.2023.119667)| Sixin Lin, Meifan Zhang|2023/Inf. Sci| 在本文中，我们提出了一种基于 LDP 学习草图的大域数据的两阶段频率估计框架，该框架将高频项和低频项分开，以避免哈希冲突引起的误差. <br> - 实验源码：待发布
+|[Sketches-based join size estimation under local differential privacy](https://ieeexplore.ieee.org/document/10598055)| Meifan Zhang, Xin Liu, Lihua Yin|2024/ICDE|本文首次研究了本地化差分隐私下基于草图技术的数据库连接查询连接大小的隐私保护，提出了LDPJoinSketch实现了高效准确的连接大小估计，并通过两阶段的频率感知扰动技术进一步优化了估计准确性. <br> - 实验源码：https://github.com/Triumphhh/LDPJoinSketch/
 
 
 # 数据与代码
