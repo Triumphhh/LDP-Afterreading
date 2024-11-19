@@ -39,6 +39,7 @@
 | Name | Key Description | Source
 | :------------| :------ | :-----------------------
 | SecretFlow | 蚂蚁集团隐语SecretFlow是一个统一的框架，用于保护隐私的数据智能和机器学习. | 官网：https://secret-flow.antgroup.com/ <br> 项目地址：https://github.com/secretflow/secretflow
+| DataTrust | 阿里巴巴DataTrust平台是基于安全多方计算、联邦学习、**差分隐私**等隐私增强计算技术打造的隐私增强计算平台。 | 阿里云DataTrust：https://help.aliyun.com/document_detail/208025.html
 | 百度网盘 | 为进一步保障数据拥有者的权益安全和隐私，百度网盘采用隐私计算、**差分隐私**、AI自动脱敏、芯片级可信安全计算服务框架MesaTEE等多项前沿技术手段来保障数据可用不可见 | 百度网盘隐私保护白皮书：https://pan.baidu.com/disk/agreement#/
 | vivo | 基于**差分隐私**技术，OriginOS能够在保护个人隐私的同时，在可靠性、性能、功耗等方面进行持续改进和优化，为用户提供更极致的使用体验。 | VIVO安全白皮书：https://privacy.vivo.com.cn/static/pdf/security-book-pdf.pdf
 | OPPO | OPPO已在手机端侧系统和部分应用中使用**本地化差分隐私**技术，在数据中添加随机噪声，仅保留数据整体统计特征，确保用户数据不出终端设备即可实现相关功能，从而更好地保护用户隐私安全。 | OPPO移动终端隐私保护白皮书：https://privacy.oppo.com/privacy-center/pdf/OPPO移动终端隐私保护白皮书V1.0.pdf
