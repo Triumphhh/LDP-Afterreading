@@ -35,6 +35,15 @@
 | LDP_protocols | Tianhao Wang | 本地化差分隐私在Python中的简单应用，包括HIO、PEM、SVSM等。 <br> 项目地址：https://github.com/vvv214/LDP_Protocols
 | pure_LDP | Samuel Maddock | 本地化差分隐私频率估计算法在Python中的简单应用，包括LH、DE、HM、AppleCMS/HCMS等。 <br> 项目地址：https://github.com/Samuel-Maddock/pure-LDP
 
+### ~_其他国内部署DP技术的厂商_
+| Name | Key Description | Source
+| :------------| :------ | :-----------------------
+| SecretFlow | 蚂蚁集团隐语SecretFlow是一个统一的框架，用于保护隐私的数据智能和机器学习. | 官网：https://secret-flow.antgroup.com/ <br> 项目地址：https://github.com/secretflow/secretflow
+| 百度网盘 | 为进一步保障数据拥有者的权益安全和隐私，百度网盘采用隐私计算、差分隐私、AI自动脱敏、芯片级可信安全计算服务框架MesaTEE等多项前沿技术手段来保障数据可用不可见 | 百度网盘隐私保护白皮书：https://pan.baidu.com/disk/agreement#/
+| vivo | 为用户的敏感信息提供了保护，包括权限管理、定位隐私保护、录音录像隐私保护、隐私密码、原子隐私系统、差分隐私等。基于差分隐私技术，OriginOS能够在保护个人隐私的同时，在可靠性、性能、功耗等方面进行持续改进和优化，为用户提供更极致的使用体验。 | VIVO安全白皮书：https://privacy.vivo.com.cn/static/pdf/security-book-pdf.pdf
+| OPPO | OPPO已在手机端侧系统和部分应用中使用本地化差分隐私技术，在数据中添加随机噪声，仅保留数据整体统计特征，确保用户数据不出终端设备即可实现相关功能，从而更好地保护用户隐私安全。 | OPPO移动终端隐私保护白皮书：https://privacy.oppo.com/privacy-center/pdf/OPPO移动终端隐私保护白皮书V1.0.pdf
+
+
 ## _Federated Learning Open-source Project_
 | Name | Team/Corporation | Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
