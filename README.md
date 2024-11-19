@@ -1,4 +1,4 @@
-![image](https://github.com/Triumphhh/LDP-Afterreading/assets/68207618/7ec8cb2e-1d1e-4ab6-8511-517c37caf502)# Differential Privacy Learning Repository of Privacy-preserving Big Data Analytics Group, CIAT, GZHU.
+# Differential Privacy Learning Repository of Privacy-preserving Big Data Analytics Group, CIAT, GZHU.
  
 # 前言
 该学习库中包括差分隐私相关研究的汇总，以及小组工作汇报内容
