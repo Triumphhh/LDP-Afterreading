@@ -12,7 +12,9 @@
 | [差分隐私研究进展综述](https://core.ac.uk/download/561074268.pdf) | Zhao Yuqi, Yang Min | 2023 | 文中给出了差分隐私技术的全面概述，总结并分析了差分隐私的最新进展。特别地，文章给出了包括中心化差分隐私、本地化模型和洗牌模型地理论总结，并对他们做了详细比较，分析了不同模型地优势和缺点.
 | [Differential Privacy in Practice: Expose your Epsilons!](https://journalprivacyconfidentiality.org/index.php/jpc/article/view/689) | Cynthia Dwork | 2019 | 文章针对差分隐私落地面临诸多阻碍的问题，使用访谈的方式，与部署了差分隐私的企业的相关人士进行了深入系统性的沟通交流，并对访谈结果进行了归纳整理。文中重点探讨了隐私预算在实际应用中的选择，提出**Epsilon Registry**.(知乎：https://zhuanlan.zhihu.com/p/641373746)
 | [Privacy at Scale: Local Differential Privacy in Practice](https://dl.acm.org/doi/10.1145/3183713.3197390) | Graham Cormode, Ninghui Li, Tianhao Wang | 2018 | 文章概述了LDP的应用场景以及行业发展方向，对LDP的各个方面进行了详细介绍.
+| [差分隐私综述](https://jcs.iie.ac.cn/xxaqxb/ch/reader/view_abstract.aspx?file_no=20180508&flag=1) | Li Xiaoguang, Li Hui, Li Fenghua, Zhu Hui | 2018 | 本文介绍了差分隐私的基础理论和目前的研究进展，以及一些已有的差分隐私保护理论和技术，最后对未来的工作和研究热点进行了展望.
 | [本地化差分隐私研究综述](https://www.jos.org.cn/jos/article/abstract/5364) | Qingqing Ye, Xiaofeng Meng | 2018 | 文章介绍了LDP的原理和特性，总结和归纳了当前研究工作以及阐述LDP的研究热点，指出了LDP的未来研究挑战.
+| [The Algorithm Fundamentions of Differential Privacy](https://privacytools.seas.harvard.edu/files/privacytools/files/the_algorithmic_foundations_of_differential_privacy_0.pdf) | Cynthia Dwork, Aaron Roth | 2014 | 本文详细介绍了差分隐私的算法基础，是差分隐私初学者必看的文献之一.
 
 ## _Differential Privacy Open-source Project_
 | Name | Team/Corporation | Year | Key Description 
