@@ -39,12 +39,12 @@
 | Name | Key Description | Source
 | :------------| :------ | :-----------------------
 | SecretFlow | 蚂蚁集团隐语SecretFlow是一个统一的框架，用于保护隐私的数据智能和机器学习. | 官网：https://secret-flow.antgroup.com/ <br> 项目地址：https://github.com/secretflow/secretflow
-| 百度网盘 | 为进一步保障数据拥有者的权益安全和隐私，百度网盘采用隐私计算、差分隐私、AI自动脱敏、芯片级可信安全计算服务框架MesaTEE等多项前沿技术手段来保障数据可用不可见 | 百度网盘隐私保护白皮书：https://pan.baidu.com/disk/agreement#/
-| vivo | 为用户的敏感信息提供了保护，包括权限管理、定位隐私保护、录音录像隐私保护、隐私密码、原子隐私系统、差分隐私等。基于差分隐私技术，OriginOS能够在保护个人隐私的同时，在可靠性、性能、功耗等方面进行持续改进和优化，为用户提供更极致的使用体验。 | VIVO安全白皮书：https://privacy.vivo.com.cn/static/pdf/security-book-pdf.pdf
-| OPPO | OPPO已在手机端侧系统和部分应用中使用本地化差分隐私技术，在数据中添加随机噪声，仅保留数据整体统计特征，确保用户数据不出终端设备即可实现相关功能，从而更好地保护用户隐私安全。 | OPPO移动终端隐私保护白皮书：https://privacy.oppo.com/privacy-center/pdf/OPPO移动终端隐私保护白皮书V1.0.pdf
-| Webank | 微众银行的多方大数据隐私计算平台，解决大模型推理过程中隐私泄露风险较高的问题：...对第二梯度进行差分隐私处理，得到第三梯度；基于第一梯度对答案预测模型进行迭代更新，并基于第三梯度对编码器进行迭代更新。 | 来源：https://www.mpaypass.com.cn/news/202406/19120626.html
-| 小米 | 差分隐私技术使小米能够在不侵犯您隐私的情况下深入了解我们手机的质量性能和用户体验。 | 小米信任中心：https://trust.mi.com/zh-CN/privacy
-| 华为 | 使用了差分隐私技术，既提升用户体验，又可保护你共享给华为的数据。运用该技术可在数据中添加随机噪声，我们无法获知真实数据。只有与其他大量用户数据结合，并平均掉随机添加的噪声，相关统计信息才会显现。 | Huawei隐私用户体验改进计划：https://consumer.huawei.com/cn/privacy/privacy-control/
+| 百度网盘 | 为进一步保障数据拥有者的权益安全和隐私，百度网盘采用隐私计算、**差分隐私**、AI自动脱敏、芯片级可信安全计算服务框架MesaTEE等多项前沿技术手段来保障数据可用不可见 | 百度网盘隐私保护白皮书：https://pan.baidu.com/disk/agreement#/
+| vivo | 为用户的敏感信息提供了保护，包括权限管理、定位隐私保护、录音录像隐私保护、隐私密码、原子隐私系统、**差分隐私**等。基于差分隐私技术，OriginOS能够在保护个人隐私的同时，在可靠性、性能、功耗等方面进行持续改进和优化，为用户提供更极致的使用体验。 | VIVO安全白皮书：https://privacy.vivo.com.cn/static/pdf/security-book-pdf.pdf
+| OPPO | OPPO已在手机端侧系统和部分应用中使用**本地化差分隐私**技术，在数据中添加随机噪声，仅保留数据整体统计特征，确保用户数据不出终端设备即可实现相关功能，从而更好地保护用户隐私安全。 | OPPO移动终端隐私保护白皮书：https://privacy.oppo.com/privacy-center/pdf/OPPO移动终端隐私保护白皮书V1.0.pdf
+| Webank | 微众银行的多方大数据隐私计算平台，解决大模型推理过程中隐私泄露风险较高的问题：...对第二梯度进行**差分隐私**处理，得到第三梯度；基于第一梯度对答案预测模型进行迭代更新，并基于第三梯度对编码器进行迭代更新。 | 来源：https://www.mpaypass.com.cn/news/202406/19120626.html
+| 小米 | **差分隐私**技术使小米能够在不侵犯您隐私的情况下深入了解我们手机的质量性能和用户体验。 | 小米信任中心：https://trust.mi.com/zh-CN/privacy
+| 华为 | 使用了**差分隐私技术**，既提升用户体验，又可保护你共享给华为的数据。运用该技术可在数据中添加随机噪声，我们无法获知真实数据。只有与其他大量用户数据结合，并平均掉随机添加的噪声，相关统计信息才会显现。 | Huawei隐私用户体验改进计划：https://consumer.huawei.com/cn/privacy/privacy-control/
 
 
 ## _Federated Learning Open-source Project_
