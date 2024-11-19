@@ -49,6 +49,7 @@
 | Webank | 微众银行的多方大数据隐私计算平台，解决大模型推理过程中隐私泄露风险较高的问题：...对第二梯度进行**差分隐私**处理，得到第三梯度；基于第一梯度对答案预测模型进行迭代更新，并基于第三梯度对编码器进行迭代更新。 | 来源：https://www.mpaypass.com.cn/news/202406/19120626.html
 | 小米 | **差分隐私**技术使小米能够在不侵犯您隐私的情况下深入了解我们手机的质量性能和用户体验。 | 小米信任中心：https://trust.mi.com/zh-CN/privacy
 | 华为 | 使用了**差分隐私技术**，既提升用户体验，又可保护你共享给华为的数据。运用该技术可在数据中添加随机噪声，我们无法获知真实数据。只有与其他大量用户数据结合，并平均掉随机添加的噪声，相关统计信息才会显现。 | Huawei隐私用户体验改进计划：https://consumer.huawei.com/cn/privacy/privacy-control/
+| 洞见科技 | 数智联邦平台InsightOne采用面向计算场景的融合引擎架构，将多方安全计算、联邦学习等算法拆分为细化的算子，并结合了差分隐私、同态加密、零知识证明等技术。 | 洞见科技InsightOne：https://www.insightone.cn/product/insightone
 
 
 ## _Federated Learning Open-source Project_
