@@ -19,7 +19,7 @@
 ## _Differential Privacy Open-source Project_
 | Name | Team/Corporation | Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [Jeddak-DPSQL](https://www.volcengine.com/product/Jeddak) | Bytedance | 2023 | 项目地址：https://github.com/bytedance/Jeddak-DPSQL/ <br> 博客：https://zhuanlan.zhihu.com/p/571766114
+| [Jeddak-DPSQL](https://www.volcengine.com/product/Jeddak) | 火山引擎/Bytedance | 2023 | 项目地址：https://github.com/bytedance/Jeddak-DPSQL/ <br> 博客：https://zhuanlan.zhihu.com/p/571766114
 | [Opacus](https://arxiv.org/abs/2109.12298) | Meta AI(Facebook) | 2021 | 项目地址：https://github.com/pytorch/opacus <br> 博客：https://zhuanlan.zhihu.com/p/212862132
 | [OpenDP](https://projects.iq.harvard.edu/files/opendp/files/opendp_programming_framework_11may2020_1_01.pdf)| OpenDP | 2020 | 项目地址：https://github.com/opendp/opendp
 | [google-differential-privay](https://desfontain.es/privacy/friendly-intro-to-differential-privacy.html) | Google | 2019 | 项目地址：https://github.com/google/differential-privacy
