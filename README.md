@@ -57,20 +57,21 @@
 | [FederatedScope](https://www.vldb.org/pvldb/vol16/p1059-li.pdf) | Alibaba DAMO | 2023 | 项目地址：https://github.com/alibaba/FederatedScope <br> 博客：https://www.jiqizhixin.com/articles/2022-05-09-7 <br> 视频讲解：https://www.bilibili.com/video/BV1Sv4y197ju/?spm_id_from=333.788&vd_source=406c96d7ba3d57a6cbbe36c50b5a1b75
 
  
-## LDP and DP下数据分析
+## LDP/DP下的数据挖掘
 | Title | Team/Main Author | Journal/Conference | Key Description 
 | :------------| :------ | :------- | :-----------------------
-| [Collecting And Analyzing Data Jointly From Multiple Services under Local Differential Privacy](https://www.vldb.org/pvldb/vol13/p2760-xu.pdf) | Alibaba, Min Xu, Bolin Ding, Tianhao Wang | 2020/VLDB Endowment | 针对多服务器场景下的本地化差分隐私数据收集与分析。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-| [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response.](https://dl.acm.org/doi/10.1145/2660267.2660348) | Google, Úlfar Erlingsson | 2014/CCS | 文章提出了基于两阶段随机响应机制的本地化差分隐私算法，用于保护客户端数据上的人口统计信息和隐私。其中随机响应机制是利用布隆过滤器实现的。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
-| [Building a RAPPOR with the Unknown: Privacy-Preserving Learning of Associations and Data Dictionaries](https://petsymposium.org/popets/2016/popets-2016-0015.php) | G. Fanti, Vasyl Pihur, Ú. Erlingsson | 2015/Priv.Enhancing Technol | 文章提出新颖的解码算法在未知关系和词典的情况下构建RAPPOR，并且开发了估计RAPPOR收集的两个或多个变量的联合分布的方法。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
-|[DPSAaS: Multi-Dimensional Data Sharing and Analytics as Services under Local Differential Privacy](https://www.vldb.org/pvldb/vol12/p1862-xu.pdf) | Alibaba, Min Xu, Tianhao Wang, Bolin Ding| 2019/VLDB Endow | 由阿里提出的本地化差分隐私下的多维数据共享和分析云服务。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-|[Heavy Hitter Estimation over Set-valued Data with Local Differential Privacy](https://dl.acm.org/doi/10.1145/2976749.2978409)|Qin Z,Yang Y|2016/CCS|本地差分隐私下对集值数据的频繁项估计。 <br> - 实验代码：https://github.com/Jun-Zhang-32108/GFIM_LDP <br> - ☑️ 组内汇报：
+|[Heavy Hitter Identification Over Large-Domain Set-Valued Data With Local Differential Privacy](https://ieeexplore.ieee.org/document/10286079/)| Youwen Zhu,Qihui Wu | 2024/Inf. Forensics Secur| 本文基于前缀扩展方法PEM提出了解决大域场景下集值数据收集频繁项估计的问题，结合先前方法研究了多重集的保护方案，保证可靠的精度的同时提升了效率. <br> - 实验代码：https://github.com/Joy-Xue/PemSet. <br> - ☑️ 组内汇报：
+|[Local Differentially Private Fuzzy Counting in Stream Data using Probabilistic Data Structures](https://ieeexplore.ieee.org/document/9855874)|D. Vatsalan, R. Bhaskar and M. A. Kaafar|2023/TKDE|本文研究实时流数据中项目频率的隐私保护问题，目标是为计数查询功能的实时处理提供改进，其中计数查询需要实时和在线地进行响应，提出一种用于实时流应用的差分隐私计数方法. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+|[DDRM: A Continual Frequency Estimation Mechanism With Local Differential Privacy](https://ieeexplore.ieee.org/document/9782510)|Qiao Xue, Qingqing Ye,Haibo Hu|2023/TKDE|本文提出了一种时间序列数据收集方案，即动态差异报告机制DDRM，用于连续频率估计，解决了记忆技术存在的两个问题，同时保持高精度，提出了为连续频率估计分配隐私预算的最佳解决方案，实现了效用增强. <br> - 实验代码：https://github.com/Joy-Xue/DDRM <br> - ☑️ 组内汇报：
+|[Multi-analyst differential privacy for online query answering](https://arxiv.org/pdf/2212.09884.pdf)|David Pujol, Albert Sun|2022/PVLDB|本文基于作者们之前的研究，将多分析师差分隐私预算分配问题扩展到了在线查询回答的情况下。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[Locally DIfferentially Private Heavy Hitters Identification](https://ieeexplore.ieee.org/document/8758350)|Tianhao Wang, Ninghui Li| 2021/TDSC | 本地化差分隐私下的频繁项识别：提出了前缀扩展方法(Prefix Extending Method,PEM)。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols <br> - ☑️ 组内汇报：
 |[Budget Sharing for multi-analyst differential privacy](https://arxiv.org/pdf/2011.01192.pdf)|David Pujol, Yikai Wu|2021/PVLDB|本文首次研究了多分析师场景下的差分隐私预算共享，并针对此问题提出了三种机制：共享激励，不干涉和适应性。 <br>- 实验代码：https://github.com/yikai-wu/Multi-Analyst-DP <br> - ☑️ 组内汇报：
-|[Multi-analyst differential privacy for online query answering](https://arxiv.org/pdf/2212.09884.pdf)|David Pujol, Albert Sun|2022/PVLDB|本文基于作者们之前的研究，将多分析师差分隐私预算分配问题扩展到了在线查询回答的情况下。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-|[DDRM: A Continual Frequency Estimation Mechanism With Local Differential Privacy](https://ieeexplore.ieee.org/document/9782510)|Qiao Xue, Qingqing Ye,Haibo Hu|2023/TKDE|本文提出了一种时间序列数据收集方案，即动态差异报告机制DDRM，用于连续频率估计，解决了记忆技术存在的两个问题，同时保持高精度，提出了为连续频率估计分配隐私预算的最佳解决方案，实现了效用增强. <br> - 实验代码：https://github.com/Joy-Xue/DDRM <br> - ☑️ 组内汇报：
-|[Local Differentially Private Fuzzy Counting in Stream Data using Probabilistic Data Structures](https://ieeexplore.ieee.org/document/9855874)|D. Vatsalan, R. Bhaskar and M. A. Kaafar|2023/TKDE|本文研究实时流数据中项目频率的隐私保护问题，目标是为计数查询功能的实时处理提供改进，其中计数查询需要实时和在线地进行响应，提出一种用于实时流应用的差分隐私计数方法. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-|[Heavy Hitter Identification Over Large-Domain Set-Valued Data With Local Differential Privacy](https://ieeexplore.ieee.org/document/10286079/)| Youwen Zhu,Qihui Wu | 2024/Inf. Forensics Secur| 本文基于前缀扩展方法PEM提出了解决大域场景下集值数据收集频繁项估计的问题，结合先前方法研究了多重集的保护方案，保证可靠的精度的同时提升了效率. <br> - 实验代码：https://github.com/Joy-Xue/PemSet. <br> - ☑️ 组内汇报：
+| [Collecting And Analyzing Data Jointly From Multiple Services under Local Differential Privacy](https://www.vldb.org/pvldb/vol13/p2760-xu.pdf) | Alibaba, Min Xu, Bolin Ding, Tianhao Wang | 2020/VLDB Endowment | 针对多服务器场景下的本地化差分隐私数据收集与分析。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+|[DPSAaS: Multi-Dimensional Data Sharing and Analytics as Services under Local Differential Privacy](https://www.vldb.org/pvldb/vol12/p1862-xu.pdf) | Alibaba, Min Xu, Tianhao Wang, Bolin Ding| 2019/VLDB Endow | 由阿里提出的本地化差分隐私下的多维数据共享和分析云服务。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+|[Heavy Hitter Estimation over Set-valued Data with Local Differential Privacy](https://dl.acm.org/doi/10.1145/2976749.2978409)|Qin Z,Yang Y|2016/CCS|本地差分隐私下对集值数据的频繁项估计。 <br> - 实验代码：https://github.com/Jun-Zhang-32108/GFIM_LDP <br> - ☑️ 组内汇报：
+| [Building a RAPPOR with the Unknown: Privacy-Preserving Learning of Associations and Data Dictionaries](https://petsymposium.org/popets/2016/popets-2016-0015.php) | G. Fanti, Vasyl Pihur, Ú. Erlingsson | 2015/Priv.Enhancing Technol | 文章提出新颖的解码算法在未知关系和词典的情况下构建RAPPOR，并且开发了估计RAPPOR收集的两个或多个变量的联合分布的方法。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
+| [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response.](https://dl.acm.org/doi/10.1145/2660267.2660348) | Google, Úlfar Erlingsson | 2014/CCS | 文章提出了基于两阶段随机响应机制的本地化差分隐私算法，用于保护客户端数据上的人口统计信息和隐私。其中随机响应机制是利用布隆过滤器实现的。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
+
 
 ## LDP and DP下数据发布
 | Title | Team/Main Author | Venue and Year | Key Description 
