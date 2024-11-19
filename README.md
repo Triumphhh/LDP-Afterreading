@@ -35,6 +35,7 @@
 | LDP_protocols | Tianhao Wang | 本地化差分隐私在Python中的简单应用，包括HIO、PEM、SVSM等。 <br> 项目地址：https://github.com/vvv214/LDP_Protocols
 | pure_LDP | Samuel Maddock | 本地化差分隐私频率估计算法在Python中的简单应用，包括LH、DE、HM、AppleCMS/HCMS等。 <br> 项目地址：https://github.com/Samuel-Maddock/pure-LDP
 | Awesome-Differential-Privacy-and-Meachine-Learning | Jie Fu | 机器学习和差分隐私的论文笔记和代码仓。 <br> 项目地址：https://github.com/JeffffffFu/Awesome-Differential-Privacy-and-Meachine-Learning
+| awesome-differential-privacy | menisadi | 差分隐私相关资源的列表。 <br> 项目地址：https://github.com/menisadi/awesome-differential-privacy
 
 ### ~_其他国内部署DP技术的厂商_
 | Name | Key Description | Source
