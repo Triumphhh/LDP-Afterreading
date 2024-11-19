@@ -50,6 +50,7 @@
 | 小米 | **差分隐私**技术使小米能够在不侵犯您隐私的情况下深入了解我们手机的质量性能和用户体验。 | 小米信任中心：https://trust.mi.com/zh-CN/privacy
 | 华为 | 使用了**差分隐私技术**，既提升用户体验，又可保护你共享给华为的数据。运用该技术可在数据中添加随机噪声，我们无法获知真实数据。只有与其他大量用户数据结合，并平均掉随机添加的噪声，相关统计信息才会显现。 | Huawei隐私用户体验改进计划：https://consumer.huawei.com/cn/privacy/privacy-control/
 | 洞见科技 | 数智联邦平台InsightOne采用面向计算场景的融合引擎架构，将多方安全计算、联邦学习等算法拆分为细化的算子，并结合了差分隐私、同态加密、零知识证明等技术。 | 洞见科技InsightOne：https://www.insightone.cn/product/insightone
+| 美团 | 为了满足大数据量级的训练和推理，美团采取经过特定场景设计的**差分隐私**方案，用以保护纵向NN，性能高且对模型精度影响小。 | 来源：https://www.shaqiu.cn/case/55
 
 
 ## _Federated Learning Open-source Project_
