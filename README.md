@@ -1,5 +1,8 @@
 # Differential Privacy Learning Repository of Privacy-preserving Big Data Analytics Group, CIAT, GZHU.
- 
+欢迎关注我们的b站账号：【隐私数据分析小组的个人空间-哔哩哔哩】 https://b23.tv/rq5CkmD
+
+每周更新差分隐私经典算法，不定期更新最新文献解读
+
 # 前言
 该学习库中包括差分隐私相关研究的汇总，以及小组工作汇报内容
 
