@@ -3,7 +3,7 @@
 
 每周更新差分隐私经典算法，不定期更新最新文献解读
 
-# 前言
+# 一、前言
 该学习库中包括差分隐私相关研究的汇总，以及小组工作汇报内容（考虑隐私原因，不再提供组内相关汇报文件）
 
 ## _Overview/Survey of Differential Privacy_
@@ -53,10 +53,11 @@
 ## _Federated Learning Open-source Project_
 | Name | Team/Corporation | Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [FATE](https://jmlr.org/papers/v22/20-815.html) | FedAI | 2019 | 项目地址：https://github.com/FederatedAI/FATE <br> 博客：https://zhuanlan.zhihu.com/p/424465305
 | [FederatedScope](https://www.vldb.org/pvldb/vol16/p1059-li.pdf) | Alibaba DAMO | 2023 | 项目地址：https://github.com/alibaba/FederatedScope <br> 博客：https://www.jiqizhixin.com/articles/2022-05-09-7 <br> 视频讲解：https://www.bilibili.com/video/BV1Sv4y197ju/?spm_id_from=333.788&vd_source=406c96d7ba3d57a6cbbe36c50b5a1b75
+| [FATE](https://jmlr.org/papers/v22/20-815.html) | FedAI/WeBank | 2019 | 项目地址：https://github.com/FederatedAI/FATE <br> 博客：https://zhuanlan.zhihu.com/p/424465305
 
- 
+# 二、差分隐私相关文献
+
 ## LDP/DP下的数据挖掘
 | Title | Team/Main Author | Journal/Conference | Key Description 
 | :------------| :------ | :------- | :-----------------------
@@ -73,57 +74,59 @@
 | [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response.](https://dl.acm.org/doi/10.1145/2660267.2660348) | Google, Úlfar Erlingsson | 2014/CCS | 文章提出了基于两阶段随机响应机制的本地化差分隐私算法，用于保护客户端数据上的人口统计信息和隐私。其中随机响应机制是利用布隆过滤器实现的。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
 
 
-## LDP and DP下数据发布
+## LDP/DP下的数据发布
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [AHEAD: Adaptive Hierarchical Decomposition for Range Query under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3485668) | Linkang Du | 2021/CCS | 主要讲述的是针对LDP下响应范围查询的问题，作者提出了一种自适应构建多层次分析树的方案来提升在LDP下响应范围查询的精度。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+| [Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://jmlr.org/papers/v21/19-253.html)| Di Wang | 2020 | 这篇文章提出使用内积多项式的形式释放函数，一般是用于分布式学习和联邦学习下，但在响应边缘查询（k-way Margin Query）时也提出了使用内积多项式的形式去简化查询函数（使用数学去定义查询函数），从而提升查询精度。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 | [Answering Multi-Dimensional Analytical Queries under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3299869.3319891) | Tianhao Wang | 2019 | pure-LDP概念。三种频率估计机制：单维和多维下的HIO机制、SC拆分再联接机制。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols  <br> - ☑️ 组内汇报：
 |[Continuous Release of Data Streams under both Centralized and Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3484750)| Tianhao Wang |2019| 主要描述的是在数据流发布环境下如何使用DP和LDP对数据流施加差分隐私保护，同时作者提出了两个框架，一个是基于DP的ToPS框架，一个是基于LDP的ToPL框架。 <br> - 实验代码：https://github.com/dp-cont/dp-cont <br> - ☑️ 组内汇报：
-| [Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://jmlr.org/papers/v21/19-253.html)| Di Wang | 2020 | 这篇文章提出使用内积多项式的形式释放函数，一般是用于分布式学习和联邦学习下，但在响应边缘查询（k-way Margin Query）时也提出了使用内积多项式的形式去简化查询函数（使用数学去定义查询函数），从而提升查询精度。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
-## DP/LDP and Optimization techniques 优化技术
+## LDP/DP下的优化技术
 | Title | Team/Main Author | Venue and Year | Key Description
 | :------------| :------ | :---------- | :-----------------------
 | [The Matrix Mechanism: optimizing liner counting queries under differential privacy](https://link.springer.com/article/10.1007/s00778-015-0398-x)| Chao Li | 2015 | 本文提出的矩阵机制(MM)可以更准确回答计数查询集，并可以通过迭代求解半定规划计算最优策略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 | [Query optimization for differentially private datamanagement system](https://ieeexplore.ieee.org/document/6544900)|Peng, Shangfu|2013|本文提出了 Pioneer，这是一种适用于 DP 兼容 DBMS 的有效且高效的查询优化器,其构建了一个重用历史查询的执行方案，以尽量减少隐私预算的使用。它还包括一种有效的算法，用于选择有助于回答新传入查询的历史查询，并且方案计算和历史查询选择的计算成本可忽略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
-## DP and LDP与机器学习相结合
+## LDP/DP与机器学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://jmlr.org/papers/v21/19-253.html)|  Di Wang | 2020 | 这篇文章基于前人工作（伯恩斯坦多项式机制、非交互式差分隐私方面等提出了使用内积多项式的方法释放函数，还提出了1-bit的通信方法，能够使泛化误差的上界更为紧致，且对样本量n的依赖度降为多项式级别，但是问题在于这只是理论上的，作者也表明了不知道在现实中的应用效果是怎么样的）。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[Optimal Algorithms for Mean Estimation under Local Differential Privacy](https://proceedings.mlr.press/v162/asi22b.html)|Hilal Asi, V. Feldman, Kunal Talwar|2022/ICML|用于处理聚合过程中的均值估计的问题，开发了一种基于高斯机制的PrivUnit方法，通过采样的方式降低噪声引入带来的误差。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+| [Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://jmlr.org/papers/v21/19-253.html)|  Di Wang | 2020 | 这篇文章基于前人工作（伯恩斯坦多项式机制、非交互式差分隐私方面等提出了使用内积多项式的方法释放函数，还提出了1-bit的通信方法，能够使泛化误差的上界更为紧致，且对样本量n的依赖度降为多项式级别，但是问题在于这只是理论上的，作者也表明了不知道在现实中的应用效果是怎么样的）。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
-## DP and LDP与联邦学习相结合
+## LDP/DP与联邦学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://www.ijcai.org/proceedings/2021/217)|Lichao Sun | 2021/IJCAI |本文针对在多层神经网络中存在隐私预算爆炸的问题提出了LDP-FL框架，不仅很好的保护了隐私，而且通过分割洗牌机制降低了隐私预算在多层迭代中的激增. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 | [LDP-Fed: Federated Learning with Local Differential Privacy](https://dl.acm.org/doi/10.1145/3378679.3394533)|Stacey Truex|2020/EdgeSys |本文提出了LDP-Fed框架，LDP 模块为在多个个体参与者的私有数据集上的大规模神经网络联合训练中模型训练参数的重复收集提供了正式的差分隐私保证。其次，LDP-Fed实现了一套选择和过滤技术，用于扰动和与参数服务器共享选择的参数更新. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
-## Join queries under DP  隐私保护数据库连接查询
+## DP下的隐私保护数据库查询
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
-| [Residual Sensitivity for Differentially Private Multi-way joins](https://dl.acm.org/doi/10.1145/3448016.3452813)| Wei Dong, Ke Yi| 2021/SIGMOD |为了解决连接查询下差分隐私噪声敏感度过大以及计算效率的问题，本文提出残差查询和残差敏感度或最大边界，使敏感度计算满足高效率、高效用以及可一体化. <br> - 实验代码：https://github.com/hkustDB/ResidualSensitivity <br> - ☑️ 组内汇报：
 | [Better than Composition：How to Answer Multiple Relational Queries under Differential Privacy](https://dl.acm.org/doi/10.1145/3589268)| Wei Dong, Dajun Sun, Ke Yi|2023/ACM Maanage.Data|将单查询机制扩展到多个查询的标准解决方案是通过隐私组合。然而，这可能会产生一个误差范围，该误差范围可能比最优值差根号d因子，其中d是查询数量。在本文中，提出了一种不同的、更全面的方法来缩小这一差距. <br> - 实验代码：https://github.com/hkustDB/PMSJA <br> - ☑️ 组内汇报：
+| [Residual Sensitivity for Differentially Private Multi-way joins](https://dl.acm.org/doi/10.1145/3448016.3452813)| Wei Dong, Ke Yi| 2021/SIGMOD |为了解决连接查询下差分隐私噪声敏感度过大以及计算效率的问题，本文提出残差查询和残差敏感度或最大边界，使敏感度计算满足高效率、高效用以及可一体化. <br> - 实验代码：https://github.com/hkustDB/ResidualSensitivity <br> - ☑️ 组内汇报：
 | _Join query ootimization techniques (Non-Private):_ ↘️
-| [Wander join and XDB: Online aggregation via random walks](https://dl.acm.org/doi/10.1145/3284551)|Feifei Li, Bin Wu, Ke Yi, Zhuoyue Zhao|2017/SIGMOD|本文提出了一种新颖的采样算法对数据库连接进行采样，基于在线聚集利用随机游走的方式针对不同场景下的连接查询进行连接采样，得到独立非均匀地样本，具有高效性. <br> - 实验代码：https://github.com/InitialDLab/XDB <br> - ☑️ 组内汇报：
 | [Random Sampling over Joins Revisited](https://github.com/Triumphhh/LDP-Afterreading/tree/main/lx)|Zhuoyue Zhao, Feifei Li, Ke Yi|2018/SIGMOD|本文对数据库连接采样的问题进行了回顾，总结了前人的方法与缺陷，并基于此提出改进。构建了连接随机采样框架统一化先前方法，并在更复杂场景下给出更加优化的方案来解决连接的随机采样. <br> - 实验代码：https://github.com/InitialDLab/SampleJoin <br> - ☑️ 组内汇报：
+| [Wander join and XDB: Online aggregation via random walks](https://dl.acm.org/doi/10.1145/3284551)|Feifei Li, Bin Wu, Ke Yi, Zhuoyue Zhao|2017/SIGMOD|本文提出了一种新颖的采样算法对数据库连接进行采样，基于在线聚集利用随机游走的方式针对不同场景下的连接查询进行连接采样，得到独立非均匀地样本，具有高效性. <br> - 实验代码：https://github.com/InitialDLab/XDB <br> - ☑️ 组内汇报：
 
-## AQP近似查询处理/Sketches 草图技术
+# 三、其他相关文献
+
+## AQP近似查询处理/Sketch草图技术
 流算法（Streaming algorithms）:使用次线性的时间、空间成本，以很高的计算速度快速响应大型流数据的处理。缺点是只能得到近似真实值的结果，但是很多算法会给出相应估计误差界限。
 | Title | Team/Main Author | Venue and Year | Key Description
 | :------------| :------ | :---------- | :-----------------------
 |[Persistent Data Sketching](https://dl.acm.org/doi/10.1145/2723372.2749443)|Zhewei Wei, Ke Yi|2015/SIGMOD|本文的是使草图持久化，从而使流式算法能够在历史上的任何先前时间回答查询，并且仍然有一个小的ε错误. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[At-the-time and Back-in-time Persistent Sketches](https://dl.acm.org/doi/10.1145/3448016.3452802)|Benwei Shi, Zhuoyue Zhao, Feifei Li|2021/SIGMOD|本文提出了当时持久性（ATTP）和回溯性持久性（BITP）草图的概念，这些草图可以用小空间近似回答对先前版本的数据的查询. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
-# __Our works__
+# 四、我们的工作
 | Title | Team/Main Author | Venue and Year | Key Description
 | :------------| :------ | :---------- | :-----------------------
 |[Local differentially private frequency estimation based on learned sketches](https://doi.org/10.1016/j.ins.2023.119667)| Sixin Lin, Meifan Zhang|2023/Inf. Sci <br> - CCF-B| 在本文中，我们提出了一种基于 LDP 学习草图的大域数据的两阶段频率估计框架，该框架将高频项和低频项分开，以避免哈希冲突引起的误差. <br> - 实验源码：待发布
 |[Sketches-based join size estimation under local differential privacy](https://ieeexplore.ieee.org/document/10598055)| Meifan Zhang, Xin Liu, Lihua Yin|2024/ICDE <br> - CCF-A|本文首次研究了本地化差分隐私下基于草图技术的数据库连接查询连接大小的隐私保护，提出了LDPJoinSketch实现了高效准确的连接大小估计，并通过两阶段的频率感知扰动技术进一步优化了估计准确性. <br> - 实验源码：https://github.com/Triumphhh/LDPJoinSketch/
 
 
-# 数据与代码
+# 五、通用数据与代码查询
 
-> 机器学习相关论文查询：https://paperswithcode.com/ <br>
-> 数据集查找：https://snap.stanford.edu/data/ <br> https://www.kaggle.com/datasets
+> **机器学习相关论文查询**：https://paperswithcode.com/ <br>
+> **数据集查找**：https://snap.stanford.edu/data/， https://www.kaggle.com/datasets
 
