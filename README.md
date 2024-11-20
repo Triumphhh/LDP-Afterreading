@@ -89,21 +89,20 @@
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [AHEAD: Adaptive Hierarchical Decomposition for Range Query under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3485668) | Linkang Du | 2021/CCS | 主要讲述的是针对LDP下响应范围查询的问题，作者提出了一种自适应构建多层次分析树的方案来提升在LDP下响应范围查询的精度。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-| [Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://jmlr.org/papers/v21/19-253.html)| Di Wang | 2020 | 这篇文章提出使用内积多项式的形式释放函数，一般是用于分布式学习和联邦学习下，但在响应边缘查询（k-way Margin Query）时也提出了使用内积多项式的形式去简化查询函数（使用数学去定义查询函数），从而提升查询精度。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-| [Answering Multi-Dimensional Analytical Queries under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3299869.3319891) | Tianhao Wang | 2019 | pure-LDP概念。三种频率估计机制：单维和多维下的HIO机制、SC拆分再联接机制。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols  <br> - ☑️ 组内汇报：
-|[Continuous Release of Data Streams under both Centralized and Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3484750)| Tianhao Wang |2019| 主要描述的是在数据流发布环境下如何使用DP和LDP对数据流施加差分隐私保护，同时作者提出了两个框架，一个是基于DP的ToPS框架，一个是基于LDP的ToPL框架。 <br> - 实验代码：https://github.com/dp-cont/dp-cont <br> - ☑️ 组内汇报：
+| [Answering Multi-Dimensional Analytical Queries under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3299869.3319891) | Tianhao Wang | 2019/SIGMOD | pure-LDP概念。三种频率估计机制：单维和多维下的HIO机制、SC拆分再联接机制。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols  <br> - ☑️ 组内汇报：
+| [Continuous Release of Data Streams under both Centralized and Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3484750)| Tianhao Wang |2019/CCS| 主要描述的是在数据流发布环境下如何使用DP和LDP对数据流施加差分隐私保护，同时作者提出了两个框架，一个是基于DP的ToPS框架，一个是基于LDP的ToPL框架。 <br> - 实验代码：https://github.com/dp-cont/dp-cont <br> - ☑️ 组内汇报：
 
 ## LDP/DP下的优化技术
 | Title | Team/Main Author | Venue and Year | Key Description
 | :------------| :------ | :---------- | :-----------------------
-| [The Matrix Mechanism: optimizing liner counting queries under differential privacy](https://link.springer.com/article/10.1007/s00778-015-0398-x)| Chao Li | 2015 | 本文提出的矩阵机制(MM)可以更准确回答计数查询集，并可以通过迭代求解半定规划计算最优策略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-| [Query optimization for differentially private datamanagement system](https://ieeexplore.ieee.org/document/6544900)|Peng, Shangfu|2013|本文提出了 Pioneer，这是一种适用于 DP 兼容 DBMS 的有效且高效的查询优化器,其构建了一个重用历史查询的执行方案，以尽量减少隐私预算的使用。它还包括一种有效的算法，用于选择有助于回答新传入查询的历史查询，并且方案计算和历史查询选择的计算成本可忽略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+| [The Matrix Mechanism: optimizing liner counting queries under differential privacy](https://link.springer.com/article/10.1007/s00778-015-0398-x)| Chao Li | 2015/VLDBJ | 本文提出的矩阵机制(MM)可以更准确回答计数查询集，并可以通过迭代求解半定规划计算最优策略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+| [Query optimization for differentially private datamanagement system](https://ieeexplore.ieee.org/document/6544900)|Peng, Shangfu|2013/ICDE|本文提出了 Pioneer，这是一种适用于 DP 兼容 DBMS 的有效且高效的查询优化器,其构建了一个重用历史查询的执行方案，以尽量减少隐私预算的使用。它还包括一种有效的算法，用于选择有助于回答新传入查询的历史查询，并且方案计算和历史查询选择的计算成本可忽略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
 ## LDP/DP与机器学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 |[Optimal Algorithms for Mean Estimation under Local Differential Privacy](https://proceedings.mlr.press/v162/asi22b.html)|Hilal Asi, V. Feldman, Kunal Talwar|2022/ICML|用于处理聚合过程中的均值估计的问题，开发了一种基于高斯机制的PrivUnit方法，通过采样的方式降低噪声引入带来的误差。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-| [Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://jmlr.org/papers/v21/19-253.html)|  Di Wang | 2020 | 这篇文章基于前人工作（伯恩斯坦多项式机制、非交互式差分隐私方面等提出了使用内积多项式的方法释放函数，还提出了1-bit的通信方法，能够使泛化误差的上界更为紧致，且对样本量n的依赖度降为多项式级别，但是问题在于这只是理论上的，作者也表明了不知道在现实中的应用效果是怎么样的）。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+| [Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://jmlr.org/papers/v21/19-253.html)|  Di Wang | 2020/JMLR | 这篇文章基于前人工作（伯恩斯坦多项式机制、非交互式差分隐私方面等提出了使用内积多项式的方法释放函数，还提出了1-bit的通信方法，能够使泛化误差的上界更为紧致，且对样本量n的依赖度降为多项式级别，但是问题在于这只是理论上的，作者也表明了不知道在现实中的应用效果是怎么样的）。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
 ## LDP/DP与联邦学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
@@ -152,6 +151,8 @@
 
 # 五、通用数据与代码查询
 
-> **机器学习相关论文查询**：https://paperswithcode.com/ <br>
-> **数据集查找**：https://snap.stanford.edu/data/， https://www.kaggle.com/datasets
+> **通用论文查询**：https://dblp.org/ <br>
+> **论文代码查询**：https://paperswithcode.com/ <br>
+> **常用数据集查找**：https://snap.stanford.edu/data/， https://www.kaggle.com/datasets <br>
+> **论文信息AI辅助**：https://www.semanticscholar.com/
 
