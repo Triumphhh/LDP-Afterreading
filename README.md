@@ -108,6 +108,7 @@
 ## LDP/DP与联邦学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
+| [FedRecovery: Differentially Private Machine Unlearning for Federated Learning Frameworks](https://doi.org/10.1109/TIFS.2023.3297905)|Lefeng Zhang, Tianqing Zhu, Wanlei Zhou, et al|2023/TIFS|论文介绍了 FedRecovery 联邦学习框架下基于差分隐私的机器遗忘算法，能消除客户端影响，无需再训练微调等，通过去除梯度残差加权和、采用高斯机制等实现，理论上有不可区分性保证。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：https://www.bilibili.com/video/BV11Qgre1EDU/?spm_id_from=333.999.0.0
 | [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://www.ijcai.org/proceedings/2021/217)|Lichao Sun | 2021/IJCAI |本文针对在多层神经网络中存在隐私预算爆炸的问题提出了LDP-FL框架，不仅很好的保护了隐私，而且通过分割洗牌机制降低了隐私预算在多层迭代中的激增. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 | [LDP-Fed: Federated Learning with Local Differential Privacy](https://dl.acm.org/doi/10.1145/3378679.3394533)|Stacey Truex|2020/EdgeSys |本文提出了LDP-Fed框架，LDP 模块为在多个个体参与者的私有数据集上的大规模神经网络联合训练中模型训练参数的重复收集提供了正式的差分隐私保证。其次，LDP-Fed实现了一套选择和过滤技术，用于扰动和与参数服务器共享选择的参数更新. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
