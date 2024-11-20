@@ -72,17 +72,22 @@
 ## LDP/DP下的数据挖掘
 | Title | Team/Main Author | Journal/Conference | Key Description 
 | :------------| :------ | :------- | :-----------------------
-|[Heavy Hitter Identification Over Large-Domain Set-Valued Data With Local Differential Privacy](https://ieeexplore.ieee.org/document/10286079/)| Youwen Zhu,Qihui Wu | 2024/Inf. Forensics Secur| 本文基于前缀扩展方法PEM提出了解决大域场景下集值数据收集频繁项估计的问题，结合先前方法研究了多重集的保护方案，保证可靠的精度的同时提升了效率. <br> - 实验代码：https://github.com/Joy-Xue/PemSet. <br> - ☑️ 组内汇报：
+|[Collecting Partial Ordered Data With Local Differential Privacy](https://doi.org/10.1109/TIFS.2024.3442554)|Yaxuan Huang,Kaiping Xue,et al|2024/TIFS|本文提出了一种基于本地化差分隐私的偏序数据分布分析方法，为了保持偏序数据的逻辑性，其利用偏序的传递性来区分扰动中的直接和间接有序。扰动后仍满足偏序的固有属性，降低了服务器通过逻辑错误推断原始数据的可能性。 <br> - 实验代码：无. <br> - ☑️ 组内汇报：
+|[PriPL-Tree: Accurate Range Query for Arbitrary Distribution under Local Differential Privacy](https://www.vldb.org/pvldb/vol17/p3031-wang.pdf)|Leixia Wang, Qingqing Ye, et al|针对数据分布不均匀导致估计不准确的问题，本文引入了新颖的PriPL-Tree结构，将分层树结构和分段线性函数相结合，以回答任意分布的范围查询，并将其扩展到具有新颖数据感知自适应网格的多维情况。 <br> - 实验代码：https://github.com/leixiawang/priplt. <br> - ☑️ 组内汇报：
+|[Heavy Hitter Identification Over Large-Domain Set-Valued Data With Local Differential Privacy](https://ieeexplore.ieee.org/document/10286079/)| Youwen Zhu,Qihui Wu | 2024/Inf. Forensics Secur| 本文基于前缀扩展方法PEM提出了解决大域场景下集值数据收集频繁项估计的问题，结合先前方法研究了多重集的保护方案，保证可靠的精度的同时提升了效率. <br> - 实验代码：无. <br> - ☑️ 组内汇报：
+|[Collecting Preference Rankings Under Local Differential Privacy](https://doi.org/10.1109/TKDE.2022.3186907)|Xiang Cheng,Jianyu Yang,et al|2023/TKDE|本文针对本地化差分隐私下收集偏好排名数据的问题，提出了SAFARI方法，收集一组精心挑选的小域分布，以近似用户排名的整体分布，然后从获得的分布中生成一个合成的排名数据集。通过在小域而不是大域上工作，SAFARI 可以显著降低增加的噪声幅度。 <br> - 实验代码：https://github.com/cheng-lab-at-bupt/SAFARI. <br> - ☑️ 组内汇报：
+|[Collaborative Sampling for Partial Multi-Dimensional Value Collection Under Local Differential Privacy](https://doi.org/10.1109/TIFS.2023.3289007)| Qiuyu Qian, Qingqing Ye, et al| 2023/TIFS |本文提出协作采样来解决多维环境中的部分数据收集问题。得益于两阶段机制，其可以得出每个维度的最佳采样率。针对估计频率的方差显示并证明了最优性，且协作采样是通用的，可在各baseline中使用，只需进行最小的调整. <br> - 实验代码：https://github.com/Joy-Xue/PemSet. <br> - ☑️ 组内汇报：
 |[Local Differentially Private Fuzzy Counting in Stream Data using Probabilistic Data Structures](https://ieeexplore.ieee.org/document/9855874)|D. Vatsalan, R. Bhaskar and M. A. Kaafar|2023/TKDE|本文研究实时流数据中项目频率的隐私保护问题，目标是为计数查询功能的实时处理提供改进，其中计数查询需要实时和在线地进行响应，提出一种用于实时流应用的差分隐私计数方法. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[DDRM: A Continual Frequency Estimation Mechanism With Local Differential Privacy](https://ieeexplore.ieee.org/document/9782510)|Qiao Xue, Qingqing Ye,Haibo Hu|2023/TKDE|本文提出了一种时间序列数据收集方案，即动态差异报告机制DDRM，用于连续频率估计，解决了记忆技术存在的两个问题，同时保持高精度，提出了为连续频率估计分配隐私预算的最佳解决方案，实现了效用增强. <br> - 实验代码：https://github.com/Joy-Xue/DDRM <br> - ☑️ 组内汇报：
 |[Multi-analyst differential privacy for online query answering](https://arxiv.org/pdf/2212.09884.pdf)|David Pujol, Albert Sun|2022/PVLDB|本文基于作者们之前的研究，将多分析师差分隐私预算分配问题扩展到了在线查询回答的情况下。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+|[Real-World Trajectory Sharing with Local Differential Privacy](http://www.vldb.org/pvldb/vol14/p2283-cunningham.pdf)|	Teddy Cunningham,Graham Cormode,et al|2021/VLDB Endow|本文提出了一种基于扰动分层结构、重叠的n-gram （即lengthn 的连续子序列）的轨迹数据的本地化差分隐私机制. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[Locally DIfferentially Private Heavy Hitters Identification](https://ieeexplore.ieee.org/document/8758350)|Tianhao Wang, Ninghui Li| 2021/TDSC | 本地化差分隐私下的频繁项识别：提出了前缀扩展方法(Prefix Extending Method,PEM)。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols <br> - ☑️ 组内汇报：
 |[Budget Sharing for multi-analyst differential privacy](https://arxiv.org/pdf/2011.01192.pdf)|David Pujol, Yikai Wu|2021/PVLDB|本文首次研究了多分析师场景下的差分隐私预算共享，并针对此问题提出了三种机制：共享激励，不干涉和适应性。 <br>- 实验代码：https://github.com/yikai-wu/Multi-Analyst-DP <br> - ☑️ 组内汇报：
-| [Collecting And Analyzing Data Jointly From Multiple Services under Local Differential Privacy](https://www.vldb.org/pvldb/vol13/p2760-xu.pdf) | Alibaba, Min Xu, Bolin Ding, Tianhao Wang | 2020/VLDB Endowment | 针对多服务器场景下的本地化差分隐私数据收集与分析。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+|[Collecting And Analyzing Data Jointly From Multiple Services under Local Differential Privacy](https://www.vldb.org/pvldb/vol13/p2760-xu.pdf) | Alibaba, Min Xu, Bolin Ding, Tianhao Wang | 2020/VLDB Endowment | 针对多服务器场景下的本地化差分隐私数据收集与分析。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[DPSAaS: Multi-Dimensional Data Sharing and Analytics as Services under Local Differential Privacy](https://www.vldb.org/pvldb/vol12/p1862-xu.pdf) | Alibaba, Min Xu, Tianhao Wang, Bolin Ding| 2019/VLDB Endow | 由阿里提出的本地化差分隐私下的多维数据共享和分析云服务。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[Heavy Hitter Estimation over Set-valued Data with Local Differential Privacy](https://dl.acm.org/doi/10.1145/2976749.2978409)|Qin Z,Yang Y|2016/CCS|本地差分隐私下对集值数据的频繁项估计。 <br> - 实验代码：https://github.com/Jun-Zhang-32108/GFIM_LDP <br> - ☑️ 组内汇报：
-| [Building a RAPPOR with the Unknown: Privacy-Preserving Learning of Associations and Data Dictionaries](https://petsymposium.org/popets/2016/popets-2016-0015.php) | G. Fanti, Vasyl Pihur, Ú. Erlingsson | 2015/Priv.Enhancing Technol | 文章提出新颖的解码算法在未知关系和词典的情况下构建RAPPOR，并且开发了估计RAPPOR收集的两个或多个变量的联合分布的方法。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
-| [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response.](https://dl.acm.org/doi/10.1145/2660267.2660348) | Google, Úlfar Erlingsson | 2014/CCS | 文章提出了基于两阶段随机响应机制的本地化差分隐私算法，用于保护客户端数据上的人口统计信息和隐私。其中随机响应机制是利用布隆过滤器实现的。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
+|[Building a RAPPOR with the Unknown: Privacy-Preserving Learning of Associations and Data Dictionaries](https://petsymposium.org/popets/2016/popets-2016-0015.php) | G. Fanti, Vasyl Pihur, Ú. Erlingsson | 2015/Priv.Enhancing Technol | 文章提出新颖的解码算法在未知关系和词典的情况下构建RAPPOR，并且开发了估计RAPPOR收集的两个或多个变量的联合分布的方法。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
+|[RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response.](https://dl.acm.org/doi/10.1145/2660267.2660348) | Google, Úlfar Erlingsson | 2014/CCS | 文章提出了基于两阶段随机响应机制的本地化差分隐私算法，用于保护客户端数据上的人口统计信息和隐私。其中随机响应机制是利用布隆过滤器实现的。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
 
 
 ## LDP/DP下的数据发布
@@ -95,12 +100,15 @@
 ## LDP/DP与机器学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
+|[DPSUR: Accelerating Differentially Private Stochastic Gradient Descent Using Selective Update and Release](https://www.vldb.org/pvldb/vol17/p1200-fu.pdf)|Jie Fu,Qingqing Ye,et al|2024/VLDB Endow|本文提出了DPSUR，一种基于选择性更新和发布的差分隐私训练框架，其中每次迭代的梯度基于验证测试进行评估，只有那些导致收敛的更新应用于模型中。因此，DPSUR确保了训练方向的正确性，因此比DPSGD能够实现更快的收敛。 <br> - 实验代码：https://github.com/jefffffffu/dpsur <br> - ☑️ 组内汇报：
 |[Optimal Algorithms for Mean Estimation under Local Differential Privacy](https://proceedings.mlr.press/v162/asi22b.html)|Hilal Asi, V. Feldman, Kunal Talwar|2022/ICML|用于处理聚合过程中的均值估计的问题，开发了一种基于高斯机制的PrivUnit方法，通过采样的方式降低噪声引入带来的误差。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-| [Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://jmlr.org/papers/v21/19-253.html)|  Di Wang | 2020/JMLR | 这篇文章基于前人工作（伯恩斯坦多项式机制、非交互式差分隐私方面等提出了使用内积多项式的方法释放函数，还提出了1-bit的通信方法，能够使泛化误差的上界更为紧致，且对样本量n的依赖度降为多项式级别，但是问题在于这只是理论上的，作者也表明了不知道在现实中的应用效果是怎么样的）。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+|[Empirical Risk Minimization in the Non-interactive Local Model of Differential Privacy](https://jmlr.org/papers/v21/19-253.html)|  Di Wang | 2020/JMLR | 这篇文章基于前人工作（伯恩斯坦多项式机制、非交互式差分隐私方面等提出了使用内积多项式的方法释放函数，还提出了1-bit的通信方法，能够使泛化误差的上界更为紧致，且对样本量n的依赖度降为多项式级别，但是问题在于这只是理论上的，作者也表明了不知道在现实中的应用效果是怎么样的）。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
 ## LDP/DP与联邦学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
+| [Siren$+$+: Robust Federated Learning With Proactive Alarming and Differential Privacy](https://doi.org/10.1109/TDSC.2024.3362534)|Hanxi Guo, Tao Song, et al|2024/TDSC|本文提出联合使用主动报警机制和LDP机制来防御拜占庭攻击和推断攻击。 <br> - 实验代码：https://github.com/AISIGSJTU/Siren-Plus <br> - ☑️ 组内汇报：
+| [Game Analysis and Incentive Mechanism Design for Differentially Private Cross-Silo Federated Learning](https://doi.org/10.1109/TMC.2024.3364372)|Wuxing Mao, Qian Ma, et al|2024/TBC|本文将客户端在跨筒仓联邦学习中的隐私保护行为表述为多阶段隐私保护游戏，其中每个阶段游戏对应一次训练迭代,证明了多阶段隐私保护博弈承认一个独特的子博弈完美纳什均衡 （SPNE）.  <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 | [FedRecovery: Differentially Private Machine Unlearning for Federated Learning Frameworks](https://doi.org/10.1109/TIFS.2023.3297905)|Lefeng Zhang, Tianqing Zhu, Wanlei Zhou, et al|2023/TIFS|论文介绍了 FedRecovery 联邦学习框架下基于差分隐私的机器遗忘算法，能消除客户端影响，无需再训练微调等，通过去除梯度残差加权和、采用高斯机制等实现，理论上有不可区分性保证。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：https://www.bilibili.com/video/BV11Qgre1EDU/?spm_id_from=333.999.0.0
 | [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://www.ijcai.org/proceedings/2021/217)|Lichao Sun | 2021/IJCAI |本文针对在多层神经网络中存在隐私预算爆炸的问题提出了LDP-FL框架，不仅很好的保护了隐私，而且通过分割洗牌机制降低了隐私预算在多层迭代中的激增. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 | [LDP-Fed: Federated Learning with Local Differential Privacy](https://dl.acm.org/doi/10.1145/3378679.3394533)|Stacey Truex|2020/EdgeSys |本文提出了LDP-Fed框架，LDP 模块为在多个个体参与者的私有数据集上的大规模神经网络联合训练中模型训练参数的重复收集提供了正式的差分隐私保证。其次，LDP-Fed实现了一套选择和过滤技术，用于扰动和与参数服务器共享选择的参数更新. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
@@ -130,6 +138,7 @@
 流算法（Streaming algorithms）:使用次线性的时间、空间成本，以很高的计算速度快速响应大型流数据的处理。缺点是只能得到近似真实值的结果，但是很多算法会给出相应估计误差界限。
 | Title | Team/Main Author | Venue and Year | Key Description
 | :------------| :------ | :---------- | :-----------------------
+|[SK-Gradient: Efficient Communication for Distributed Machine Learning with Data Sketch](https://doi.org/10.1109/ICDE55515.2023.00183)|Jie Gui, Yuchen Song, et al|2023/ICDE|论文设计了基于Sketch的梯度压缩框架SK-Gradient。核心是一个为梯度压缩而设计的FGC Sketch。其以紧凑的二维数据结构存储压缩的梯度，能提供极高的压缩比率上限。同时，其预存储哈希结果并重复运用，消除了传统Sketch算法即时哈希计算的高额开销，进而降低了算法整体的计算开销。 <br> - 实验代码：https://github.com/N2-Sys/SK-Gradient <br> - ☑️ 组内汇报：
 |[Persistent Data Sketching](https://dl.acm.org/doi/10.1145/2723372.2749443)|Zhewei Wei, Ke Yi|2015/SIGMOD|本文的是使草图持久化，从而使流式算法能够在历史上的任何先前时间回答查询，并且仍然有一个小的ε错误. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[At-the-time and Back-in-time Persistent Sketches](https://dl.acm.org/doi/10.1145/3448016.3452802)|Benwei Shi, Zhuoyue Zhao, Feifei Li|2021/SIGMOD|本文提出了当时持久性（ATTP）和回溯性持久性（BITP）草图的概念，这些草图可以用小空间近似回答对先前版本的数据的查询. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
