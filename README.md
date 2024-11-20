@@ -14,7 +14,7 @@
 # 一、前言
 该学习库中包括差分隐私相关研究的汇总，以及小组工作汇报内容（考虑隐私原因，不再提供组内相关汇报文件）
 
-## _Overview/Survey of Differential Privacy_
+## _Overview/Survey of Differential Privacy 差分隐私相关综述_ 
 | Title | Team/Main Author | Year | Key Description 
 | :--------------| :------ | :---------- | :-----------------------
 | [差分隐私研究进展综述](https://core.ac.uk/download/561074268.pdf) | Zhao Yuqi, Yang Min | 2023 | 文中给出了差分隐私技术的全面概述，总结并分析了差分隐私的最新进展。特别地，文章给出了包括中心化差分隐私、本地化模型和洗牌模型地理论总结，并对他们做了详细比较，分析了不同模型地优势和缺点.
@@ -24,20 +24,20 @@
 | [本地化差分隐私研究综述](https://www.jos.org.cn/jos/article/abstract/5364) | Qingqing Ye, Xiaofeng Meng | 2018 | 文章介绍了LDP的原理和特性，总结和归纳了当前研究工作以及阐述LDP的研究热点，指出了LDP的未来研究挑战.
 | [The Algorithm Fundamentions of Differential Privacy](https://privacytools.seas.harvard.edu/files/privacytools/files/the_algorithmic_foundations_of_differential_privacy_0.pdf) | Cynthia Dwork, Aaron Roth | 2014 | 本文详细介绍了差分隐私的算法基础，是差分隐私初学者必看的文献之一.
 
-## _Differential Privacy Open-source Project_
+## _Differential Privacy Open-source Project 差分隐私开源项目_
 | Name | Team/Corporation | Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [Jeddak-DPSQL](https://www.volcengine.com/product/Jeddak) | 火山引擎/Bytedance | 2023 | 项目地址：https://github.com/bytedance/Jeddak-DPSQL/ <br> 博客：https://zhuanlan.zhihu.com/p/571766114
 | [Opacus](https://arxiv.org/abs/2109.12298) | Meta AI(Facebook) | 2021 | 项目地址：https://github.com/pytorch/opacus <br> 博客：https://zhuanlan.zhihu.com/p/212862132
 | [OpenDP](https://projects.iq.harvard.edu/files/opendp/files/opendp_programming_framework_11may2020_1_01.pdf)| OpenDP | 2020 | 项目地址：https://github.com/opendp/opendp
 | [google-differential-privay](https://desfontain.es/privacy/friendly-intro-to-differential-privacy.html) | Google | 2019 | 项目地址：https://github.com/google/differential-privacy
-| [IBM-differential-privacy-library](https://arxiv.org/abs/1907.02444) | IBM | 2018 | 项目地址https://github.com/IBM/differential-privacy-library/blob/main/ <br> 博客：https://research.ibm.com/blog/ibm-differential-privacy-library-the-single-line-of-code-that-can-protect-your-data
-| [learning-privacy-at-scale](https://docs-assets.developer.apple.com/ml-research/papers/learning-with-privacy-at-scale.pdf) | Apple | 2017 | 项目地址https://github.com/Samuel-Maddock/Apple-Differential-Privacy <br> 博客：https://machinelearning.apple.com/research/learning-with-privacy-at-scale
+| [IBM-differential-privacy-library](https://arxiv.org/abs/1907.02444) | IBM | 2018 | 项目地址：https://github.com/IBM/differential-privacy-library/blob/main/ <br> 博客：https://research.ibm.com/blog/ibm-differential-privacy-library-the-single-line-of-code-that-can-protect-your-data
+| [learning-privacy-at-scale](https://docs-assets.developer.apple.com/ml-research/papers/learning-with-privacy-at-scale.pdf) | Apple | 2017 | 项目地址：https://github.com/Samuel-Maddock/Apple-Differential-Privacy <br> 博客：https://machinelearning.apple.com/research/learning-with-privacy-at-scale
 | [Collecting Telemetry Data Privately](https://proceedings.neurips.cc/paper/2017/hash/253614bbac999b38b5b60cae531c4969-Abstract.html) | Microsoft | 2017 | 项目地址：None <br> 博客：https://www.microsoft.com/en-us/research/blog/collecting-telemetry-data-privately/
 | [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response](https://dl.acm.org/doi/10.1145/2660267.2660348)| Google | 2015 | 项目地址：https://github.com/google/rappor <br> 博客：https://www.cnblogs.com/sftsgly/articles/17501447.html
 
 
-### ~ _Some other useful DP tool libraries_ 
+### ~ _Some other useful DP tool libraries 差分隐私工具库_ 
 | Name | Author | Key Description 
 | :------------| :------ | :-----------------------
 | LDP_protocols | Tianhao Wang | 本地化差分隐私在Python中的简单应用，包括HIO、PEM、SVSM等。 <br> 项目地址：https://github.com/vvv214/LDP_Protocols
