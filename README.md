@@ -4,11 +4,11 @@
 每周更新差分隐私经典算法，不定期更新最新文献解读
 
 # 目录
-1. [前言](#一前言)
-2. [差分隐私相关文献](#二差分隐私相关文献)
-3. [其他相关文献](#三其他相关文献)
-4. [我们的工作](#四我们的工作)
-5. [通用数据与代码](#五通用数据与代码查询)
+- [一、前言](#一前言)
+- [二、差分隐私相关文献](#二差分隐私相关文献)
+- [三、其他相关文献](#三其他相关文献)
+- [四、我们的工作](#四我们的工作)
+- [五、通用数据与代码](#五通用数据与代码查询)
 
 
 # 一、前言
@@ -92,12 +92,6 @@
 | [Answering Multi-Dimensional Analytical Queries under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3299869.3319891) | Tianhao Wang | 2019/SIGMOD | pure-LDP概念。三种频率估计机制：单维和多维下的HIO机制、SC拆分再联接机制。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols  <br> - ☑️ 组内汇报：
 | [Continuous Release of Data Streams under both Centralized and Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3484750)| Tianhao Wang |2019/CCS| 主要描述的是在数据流发布环境下如何使用DP和LDP对数据流施加差分隐私保护，同时作者提出了两个框架，一个是基于DP的ToPS框架，一个是基于LDP的ToPL框架。 <br> - 实验代码：https://github.com/dp-cont/dp-cont <br> - ☑️ 组内汇报：
 
-## LDP/DP下的优化技术
-| Title | Team/Main Author | Venue and Year | Key Description
-| :------------| :------ | :---------- | :-----------------------
-| [The Matrix Mechanism: optimizing liner counting queries under differential privacy](https://link.springer.com/article/10.1007/s00778-015-0398-x)| Chao Li | 2015/VLDBJ | 本文提出的矩阵机制(MM)可以更准确回答计数查询集，并可以通过迭代求解半定规划计算最优策略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-| [Query optimization for differentially private datamanagement system](https://ieeexplore.ieee.org/document/6544900)|Peng, Shangfu|2013/ICDE|本文提出了 Pioneer，这是一种适用于 DP 兼容 DBMS 的有效且高效的查询优化器,其构建了一个重用历史查询的执行方案，以尽量减少隐私预算的使用。它还包括一种有效的算法，用于选择有助于回答新传入查询的历史查询，并且方案计算和历史查询选择的计算成本可忽略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-
 ## LDP/DP与机器学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
@@ -116,10 +110,13 @@
 | :------------| :------ | :---------- | :-----------------------
 | [Better than Composition：How to Answer Multiple Relational Queries under Differential Privacy](https://dl.acm.org/doi/10.1145/3589268)| Wei Dong, Dajun Sun, Ke Yi|2023/ACM Maanage.Data|将单查询机制扩展到多个查询的标准解决方案是通过隐私组合。然而，这可能会产生一个误差范围，该误差范围可能比最优值差根号d因子，其中d是查询数量。在本文中，提出了一种不同的、更全面的方法来缩小这一差距. <br> - 实验代码：https://github.com/hkustDB/PMSJA <br> - ☑️ 组内汇报：
 | [Residual Sensitivity for Differentially Private Multi-way joins](https://dl.acm.org/doi/10.1145/3448016.3452813)| Wei Dong, Ke Yi| 2021/SIGMOD |为了解决连接查询下差分隐私噪声敏感度过大以及计算效率的问题，本文提出残差查询和残差敏感度或最大边界，使敏感度计算满足高效率、高效用以及可一体化. <br> - 实验代码：https://github.com/hkustDB/ResidualSensitivity <br> - ☑️ 组内汇报：
+| [The Matrix Mechanism: optimizing liner counting queries under differential privacy](https://link.springer.com/article/10.1007/s00778-015-0398-x)| Chao Li | 2015/VLDBJ | 本文提出的矩阵机制(MM)可以更准确回答计数查询集，并可以通过迭代求解半定规划计算最优策略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+| [Query optimization for differentially private datamanagement system](https://ieeexplore.ieee.org/document/6544900)|Peng, Shangfu|2013/ICDE|本文提出了 Pioneer，这是一种适用于 DP 兼容 DBMS 的有效且高效的查询优化器,其构建了一个重用历史查询的执行方案，以尽量减少隐私预算的使用。它还包括一种有效的算法，用于选择有助于回答新传入查询的历史查询，并且方案计算和历史查询选择的计算成本可忽略。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 
 ## LDP/DP下的大语言模型(LLM)隐私保护
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
+| [Privacy-Preserving Techniques in Generative AI and Large Language Models: A Narrative Review](https://www.mdpi.com/2078-2489/15/11/697)|G. Feretzakis, Konstantinos Papaspyridis, et al|2024/Information|这篇综述全面概述了旨在保护生成式 AI 中数据隐私的隐私保护技术，例如差分隐私（DP）、联邦学习（FL）、同态加密（HE） 和安全多方计算（SMPC）。 <br> - 实验代码：无
 | [DP-Forward: Fine-tuning and Inference on Language Models with Differential Privacy in Forward Pass](https://doi.org/10.1145/3576915.3616592)|Minxin Du, Tianhao Wang, et al|2023/CCS|本文介绍了一种在前向传递中扰乱嵌入矩阵的方法，以实现差分隐私的语言模型微调和推理. <br> - 实验代码：https://github.com/xiangyue9607/dp-forward <br> - ☑️ 组内汇报：
 
 ## 基于混洗模型的DP(Shuffle DP)
