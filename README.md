@@ -9,6 +9,7 @@
 - [三、其他相关文献](#三其他相关文献)
 - [四、我们的工作](#四我们的工作)
 - [五、通用数据与代码](#五通用数据与代码查询)
+- [六、扩展内容](#六扩展内容)
 
 
 # 一、前言
@@ -37,7 +38,7 @@
 | [RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response](https://dl.acm.org/doi/10.1145/2660267.2660348)| Google | 2015 | 项目地址：https://github.com/google/rappor <br> 博客：https://www.cnblogs.com/sftsgly/articles/17501447.html
 
 
-### ~ _Some other useful DP tool libraries 差分隐私工具库_ 
+### ~ _Some other useful DP tool libraries 其他差分隐私工具库_ 
 | Name | Author | Key Description 
 | :------------| :------ | :-----------------------
 | LDP_protocols | Tianhao Wang | 本地化差分隐私在Python中的简单应用，包括HIO、PEM、SVSM等。 <br> 项目地址：https://github.com/vvv214/LDP_Protocols
@@ -46,22 +47,7 @@
 | awesome-differential-privacy | menisadi | 差分隐私相关资源的列表。 <br> 项目地址：https://github.com/menisadi/awesome-differential-privacy
 | prv_accountant | Microsoft | 一个快速算法，用于以任意精度最优地组合差分隐私机制的隐私保证。 <br> 项目地址：https://github.com/microsoft/prv_accountant
 
-### ~_其他国内部署DP技术的厂商_
-| Name | Key Description | Source
-| :------------| :------ | :-----------------------
-| SecretFlow | 蚂蚁集团隐语SecretFlow是一个统一的框架，用于保护隐私的数据智能和机器学习. | 官网：https://secret-flow.antgroup.com/ <br> 项目地址：https://github.com/secretflow/secretflow
-| DataTrust | 阿里巴巴DataTrust平台是基于安全多方计算、联邦学习、**差分隐私**等隐私增强计算技术打造的隐私增强计算平台。 | 阿里云DataTrust：https://help.aliyun.com/document_detail/208025.html
-| 百度网盘 | 为进一步保障数据拥有者的权益安全和隐私，百度网盘采用隐私计算、**差分隐私**、AI自动脱敏、芯片级可信安全计算服务框架MesaTEE等多项前沿技术手段来保障数据可用不可见 | 百度网盘隐私保护白皮书：https://pan.baidu.com/disk/agreement#/
-| vivo | 基于**差分隐私**技术，OriginOS能够在保护个人隐私的同时，在可靠性、性能、功耗等方面进行持续改进和优化，为用户提供更极致的使用体验。 | VIVO安全白皮书：https://privacy.vivo.com.cn/static/pdf/security-book-pdf.pdf
-| OPPO | OPPO已在手机端侧系统和部分应用中使用**本地化差分隐私**技术，在数据中添加随机噪声，仅保留数据整体统计特征，确保用户数据不出终端设备即可实现相关功能，从而更好地保护用户隐私安全。 | OPPO移动终端隐私保护白皮书：https://privacy.oppo.com/privacy-center/pdf/OPPO移动终端隐私保护白皮书V1.0.pdf
-| Webank | 微众银行的多方大数据隐私计算平台，解决大模型推理过程中隐私泄露风险较高的问题：...对第二梯度进行**差分隐私**处理，得到第三梯度；基于第一梯度对答案预测模型进行迭代更新，并基于第三梯度对编码器进行迭代更新。 | 来源：https://www.mpaypass.com.cn/news/202406/19120626.html
-| 小米 | **差分隐私**技术使小米能够在不侵犯您隐私的情况下深入了解我们手机的质量性能和用户体验。 | 小米信任中心：https://trust.mi.com/zh-CN/privacy
-| 华为 | 使用了**差分隐私技术**，既提升用户体验，又可保护你共享给华为的数据。运用该技术可在数据中添加随机噪声，我们无法获知真实数据。只有与其他大量用户数据结合，并平均掉随机添加的噪声，相关统计信息才会显现。 | Huawei隐私用户体验改进计划：https://consumer.huawei.com/cn/privacy/privacy-control/
-| 洞见科技 | 数智联邦平台InsightOne采用面向计算场景的融合引擎架构，将多方安全计算、联邦学习等算法拆分为细化的算子，并结合了差分隐私、同态加密、零知识证明等技术。 | 洞见科技InsightOne：https://www.insightone.cn/product/insightone
-| 美团 | 为了满足大数据量级的训练和推理，美团采取经过特定场景设计的**差分隐私**方案，用以保护纵向NN，性能高且对模型精度影响小。 | 来源：https://www.shaqiu.cn/case/55
-
-
-## _Federated Learning Open-source Project_
+## _Federated Learning Open-source Project 联邦学习开源项目_ 
 | Name | Team/Corporation | Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [FederatedScope](https://www.vldb.org/pvldb/vol16/p1059-li.pdf) | Alibaba DAMO | 2023 | 项目地址：https://github.com/alibaba/FederatedScope <br> 博客：https://www.jiqizhixin.com/articles/2022-05-09-7 <br> 视频讲解：https://www.bilibili.com/video/BV1Sv4y197ju/?spm_id_from=333.788&vd_source=406c96d7ba3d57a6cbbe36c50b5a1b75
@@ -69,7 +55,7 @@
 
 # 二、差分隐私相关文献
 
-## LDP/DP下的数据挖掘
+## LDP/DP下的数据挖掘和发布
 | Title | Team/Main Author | Journal/Conference | Key Description 
 | :------------| :------ | :------- | :-----------------------
 |[Relation Mining Under Local Differential Privacy](https://www.usenix.org/conference/usenixsecurity24/presentation/dong-kai)|Kai Dong, Zheng Zhang, et al|2024/USENIX SS|本文首次提出了LDP下的关系挖掘方法LDP-RM，它表示矩阵中的项目和关系，并利用奇异值分解和低秩近似将要估计的值的数量从O(k*k)降到O(r)。 <br> - 实验代码：https://github.com/zybxav/LDP-RM <br> - ☑️ 组内汇报：
@@ -83,22 +69,17 @@
 |[DDRM: A Continual Frequency Estimation Mechanism With Local Differential Privacy](https://ieeexplore.ieee.org/document/9782510)|Qiao Xue, Qingqing Ye,Haibo Hu|2023/TKDE|本文提出了一种时间序列数据收集方案，即动态差异报告机制DDRM，用于连续频率估计，解决了记忆技术存在的两个问题，同时保持高精度，提出了为连续频率估计分配隐私预算的最佳解决方案，实现了效用增强. <br> - 实验代码：https://github.com/Joy-Xue/DDRM <br> - ☑️ 组内汇报：
 |[Multi-analyst differential privacy for online query answering](https://arxiv.org/pdf/2212.09884.pdf)|David Pujol, Albert Sun|2022/PVLDB|本文基于作者们之前的研究，将多分析师差分隐私预算分配问题扩展到了在线查询回答的情况下。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[Secure and Utility-Aware Data Collection with Condensed Local Differential Privacy](https://doi.org/10.1109/TDSC.2019.2949041)| Mehmet Emre Gursoy |2021/TDSC|本文引入CLDP（Condensed Local Differential Privacy）用于小样本数据手机问题，提出了一系列CLDP方案，这些方案都可以用于对样本进行统计，并且数据有效性较高. <br> - 实验代码：https://github.com/git-disl/CLDP <br> - ☑️ 组内汇报：
+|[AHEAD: Adaptive Hierarchical Decomposition for Range Query under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3485668) | Linkang Du | 2021/CCS | 主要讲述的是针对LDP下响应范围查询的问题，作者提出了一种自适应构建多层次分析树的方案来提升在LDP下响应范围查询的精度。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[Real-World Trajectory Sharing with Local Differential Privacy](http://www.vldb.org/pvldb/vol14/p2283-cunningham.pdf)|	Teddy Cunningham,Graham Cormode,et al|2021/VLDB Endow|本文提出了一种基于扰动分层结构、重叠的n-gram （即lengthn 的连续子序列）的轨迹数据的本地化差分隐私机制. <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[Locally DIfferentially Private Heavy Hitters Identification](https://ieeexplore.ieee.org/document/8758350)|Tianhao Wang, Ninghui Li| 2021/TDSC | 本地化差分隐私下的频繁项识别：提出了前缀扩展方法(Prefix Extending Method,PEM)。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols <br> - ☑️ 组内汇报：
 |[Budget Sharing for multi-analyst differential privacy](https://arxiv.org/pdf/2011.01192.pdf)|David Pujol, Yikai Wu|2021/PVLDB|本文首次研究了多分析师场景下的差分隐私预算共享，并针对此问题提出了三种机制：共享激励，不干涉和适应性。 <br>- 实验代码：https://github.com/yikai-wu/Multi-Analyst-DP <br> - ☑️ 组内汇报：
 |[Collecting And Analyzing Data Jointly From Multiple Services under Local Differential Privacy](https://www.vldb.org/pvldb/vol13/p2760-xu.pdf) | Alibaba, Min Xu, Bolin Ding, Tianhao Wang | 2020/VLDB Endowment | 针对多服务器场景下的本地化差分隐私数据收集与分析。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
+|[Answering Multi-Dimensional Analytical Queries under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3299869.3319891) | Tianhao Wang | 2019/SIGMOD | pure-LDP概念。三种频率估计机制：单维和多维下的HIO机制、SC拆分再联接机制。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols  <br> - ☑️ 组内汇报：
+|[Continuous Release of Data Streams under both Centralized and Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3484750)| Tianhao Wang |2019/CCS| 主要描述的是在数据流发布环境下如何使用DP和LDP对数据流施加差分隐私保护，同时作者提出了两个框架，一个是基于DP的ToPS框架，一个是基于LDP的ToPL框架。 <br> - 实验代码：https://github.com/dp-cont/dp-cont <br> - ☑️ 组内汇报：
 |[DPSAaS: Multi-Dimensional Data Sharing and Analytics as Services under Local Differential Privacy](https://www.vldb.org/pvldb/vol12/p1862-xu.pdf) | Alibaba, Min Xu, Tianhao Wang, Bolin Ding| 2019/VLDB Endow | 由阿里提出的本地化差分隐私下的多维数据共享和分析云服务。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
 |[Heavy Hitter Estimation over Set-valued Data with Local Differential Privacy](https://dl.acm.org/doi/10.1145/2976749.2978409)|Qin Z,Yang Y|2016/CCS|本地差分隐私下对集值数据的频繁项估计。 <br> - 实验代码：https://github.com/Jun-Zhang-32108/GFIM_LDP <br> - ☑️ 组内汇报：
 |[Building a RAPPOR with the Unknown: Privacy-Preserving Learning of Associations and Data Dictionaries](https://petsymposium.org/popets/2016/popets-2016-0015.php) | G. Fanti, Vasyl Pihur, Ú. Erlingsson | 2015/Priv.Enhancing Technol | 文章提出新颖的解码算法在未知关系和词典的情况下构建RAPPOR，并且开发了估计RAPPOR收集的两个或多个变量的联合分布的方法。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
 |[RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response.](https://dl.acm.org/doi/10.1145/2660267.2660348) | Google, Úlfar Erlingsson | 2014/CCS | 文章提出了基于两阶段随机响应机制的本地化差分隐私算法，用于保护客户端数据上的人口统计信息和隐私。其中随机响应机制是利用布隆过滤器实现的。 <br> - 实验代码：https://github.com/google/rappor <br> - ☑️ 组内汇报：
-
-
-## LDP/DP下的数据发布
-| Title | Team/Main Author | Venue and Year | Key Description 
-| :------------| :------ | :---------- | :-----------------------
-| [AHEAD: Adaptive Hierarchical Decomposition for Range Query under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3485668) | Linkang Du | 2021/CCS | 主要讲述的是针对LDP下响应范围查询的问题，作者提出了一种自适应构建多层次分析树的方案来提升在LDP下响应范围查询的精度。 <br> - 实验代码：无 <br> - ☑️ 组内汇报：
-| [Answering Multi-Dimensional Analytical Queries under Local Differential Privacy](https://dl.acm.org/doi/10.1145/3299869.3319891) | Tianhao Wang | 2019/SIGMOD | pure-LDP概念。三种频率估计机制：单维和多维下的HIO机制、SC拆分再联接机制。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols  <br> - ☑️ 组内汇报：
-| [Continuous Release of Data Streams under both Centralized and Local Differential Privacy](https://dl.acm.org/doi/10.1145/3460120.3484750)| Tianhao Wang |2019/CCS| 主要描述的是在数据流发布环境下如何使用DP和LDP对数据流施加差分隐私保护，同时作者提出了两个框架，一个是基于DP的ToPS框架，一个是基于LDP的ToPL框架。 <br> - 实验代码：https://github.com/dp-cont/dp-cont <br> - ☑️ 组内汇报：
 
 ## LDP/DP与机器学习相结合
 | Title | Team/Main Author | Venue and Year | Key Description 
@@ -130,7 +111,7 @@
 | [Privacy-Preserving Techniques in Generative AI and Large Language Models: A Narrative Review](https://www.mdpi.com/2078-2489/15/11/697)|G. Feretzakis, Konstantinos Papaspyridis, et al|2024/Information|这篇综述全面概述了旨在保护生成式 AI 中数据隐私的隐私保护技术，例如差分隐私（DP）、联邦学习（FL）、同态加密（HE） 和安全多方计算（SMPC）。 <br> - 实验代码：无
 | [DP-Forward: Fine-tuning and Inference on Language Models with Differential Privacy in Forward Pass](https://doi.org/10.1145/3576915.3616592)|Minxin Du, Tianhao Wang, et al|2023/CCS|本文介绍了一种在前向传递中扰乱嵌入矩阵的方法，以实现差分隐私的语言模型微调和推理. <br> - 实验代码：https://github.com/xiangyue9607/dp-forward <br> - ☑️ 组内汇报：
 
-## 基于混洗模型的DP(Shuffle DP)
+## 基于混洗模型（shuffle mode）的SDP
 | Title | Team/Main Author | Venue and Year | Key Description 
 | :------------| :------ | :---------- | :-----------------------
 | [Improving Utility and Security of the Shuffler-based Differential Privacy](http://www.vldb.org/pvldb/vol13/p3545-wang.pdf)|Tianhao Wang, Bolin Ding, Min Xu, et al|2020/VLDB Endow|本文从两个角度研究了差分隐私的洗牌模型。首先，从算法角度进行研究，并对现有技术进行改进。其次，从模型的安全性角度出发，强调了两种攻击类型：串通攻击和数据中毒攻击；随后，提出了在这些攻击下更加安全的 PEOS 协议。 <br> - 实验代码：https://github.com/vvv214/LDP_Protocols/tree/master/murs <br> - ☑️ 组内汇报：
@@ -165,3 +146,18 @@
 > **常用数据集查找**：https://snap.stanford.edu/data/， https://www.kaggle.com/datasets <br>
 > **论文信息AI辅助**：https://www.semanticscholar.com/
 
+# 六、扩展内容
+
+## _国内部署差分隐私保护技术的厂商_
+| Name | Key Description | Source
+| :----------| :------ | :-----------------------
+| SecretFlow | 蚂蚁集团隐语SecretFlow是一个统一的框架，用于保护隐私的数据智能和机器学习. | 官网：https://secret-flow.antgroup.com/ <br> 项目地址：https://github.com/secretflow/secretflow
+| DataTrust | 阿里巴巴DataTrust平台是基于安全多方计算、联邦学习、**差分隐私**等隐私增强计算技术打造的隐私增强计算平台。 | 阿里云DataTrust：https://help.aliyun.com/document_detail/208025.html
+| 百度网盘 | 为进一步保障数据拥有者的权益安全和隐私，百度网盘采用隐私计算、**差分隐私**、AI自动脱敏、芯片级可信安全计算服务框架MesaTEE等多项前沿技术手段来保障数据可用不可见 | 百度网盘隐私保护白皮书：https://pan.baidu.com/disk/agreement#/
+| vivo | 基于**差分隐私**技术，OriginOS能够在保护个人隐私的同时，在可靠性、性能、功耗等方面进行持续改进和优化，为用户提供更极致的使用体验。 | VIVO安全白皮书：https://privacy.vivo.com.cn/static/pdf/security-book-pdf.pdf
+| OPPO | OPPO已在手机端侧系统和部分应用中使用**本地化差分隐私**技术，在数据中添加随机噪声，仅保留数据整体统计特征，确保用户数据不出终端设备即可实现相关功能，从而更好地保护用户隐私安全。 | OPPO移动终端隐私保护白皮书：https://privacy.oppo.com/privacy-center/pdf/OPPO移动终端隐私保护白皮书V1.0.pdf
+| Webank | 微众银行的多方大数据隐私计算平台，解决大模型推理过程中隐私泄露风险较高的问题：...对第二梯度进行**差分隐私**处理，得到第三梯度；基于第一梯度对答案预测模型进行迭代更新，并基于第三梯度对编码器进行迭代更新。 | 来源：https://www.mpaypass.com.cn/news/202406/19120626.html
+| 小米 | **差分隐私**技术使小米能够在不侵犯您隐私的情况下深入了解我们手机的质量性能和用户体验。 | 小米信任中心：https://trust.mi.com/zh-CN/privacy
+| 华为 | 使用了**差分隐私技术**，既提升用户体验，又可保护你共享给华为的数据。运用该技术可在数据中添加随机噪声，我们无法获知真实数据。只有与其他大量用户数据结合，并平均掉随机添加的噪声，相关统计信息才会显现。 | Huawei隐私用户体验改进计划：https://consumer.huawei.com/cn/privacy/privacy-control/
+| 洞见科技 | 数智联邦平台InsightOne采用面向计算场景的融合引擎架构，将多方安全计算、联邦学习等算法拆分为细化的算子，并结合了**差分隐私**、同态加密、零知识证明等技术。 | 洞见科技InsightOne：https://www.insightone.cn/product/insightone
+| 美团 | 为了满足大数据量级的训练和推理，美团采取经过特定场景设计的**差分隐私**方案，用以保护纵向NN，性能高且对模型精度影响小。 | 来源：https://www.shaqiu.cn/case/55
